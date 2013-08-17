@@ -271,12 +271,24 @@ a {
 /* line 55, _src/styles/post.scss */
 .post .post-content {
   margin-top: 40px;
+  line-height: 2em;
 }
-/* line 59, _src/styles/post.scss */
+/* line 60, _src/styles/post.scss */
 .post p {
   margin: 20px 0;
 }
-/* line 63, _src/styles/post.scss */
+/* line 64, _src/styles/post.scss */
+.post code {
+  border: 1px solid #bbb;
+  background-color: #ececec;
+  padding: 2px 5px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 71, _src/styles/post.scss */
 .post .highlight {
   width: 918px;
   margin-left: -40px;
@@ -284,4 +296,10 @@ a {
   background-color: #ececec;
   border-top: 1px solid #bbb;
   border-bottom: 1px solid #bbb;
+}
+/* line 79, _src/styles/post.scss */
+.post .highlight code {
+  border: none;
+  background: none;
+  padding: 0;
 }

@@ -54,10 +54,18 @@ $post-padding: 40px;
 
   .post-content {
     margin-top: $post-padding;
+    line-height: 2em;
   }
 
   p {
     margin: 20px 0;
+  }
+
+  code {
+    border: 1px solid #bbb;
+    background-color: #ececec;
+    padding: 2px 5px;
+    @include border-radius(2px);
   }
 
   .highlight {
@@ -67,5 +75,11 @@ $post-padding: 40px;
     background-color: #ececec;
     border-top: 1px solid #bbb;
     border-bottom: 1px solid #bbb;
+
+    code {
+      border: none;
+      background: none;
+      padding: 0;
+    }
   }
 }
