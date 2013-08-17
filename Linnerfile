@@ -1,0 +1,25 @@
+paths:
+  app: "_src"
+  public: "public"
+groups:
+  scripts:
+    paths:
+      - "_src/scripts"
+    concat:
+      "js/app.js": "{_src/scripts/**/*.{js,coffee}}"
+  styles:
+    paths:
+      - "_src/styles"
+    concat:
+      "css/app.css": "{_src/styles/**/[a-z]*.{css,scss,sass}}"
+    order:
+      - "_src/styles/global.scss"
+  images:
+    paths:
+      - "_src/images"
+    copy:
+      "img/": "_src/images/**/*.{png,gif,jpg}"
+modules:
+  wrapper: "CMD"
+  definition: "js/app.js"
+notification: true
