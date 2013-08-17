@@ -1,14 +1,22 @@
 @import "compass/reset";
 @import "common";
 
+// @import url(http://fonts.googleapis.com/css?family=Fauna+One);
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro);
+// @import url(http://fonts.googleapis.com/css?family=Voces);
+
 body {
   background-color: $color-rule-2;
   color: #666;
   font-size: 12px;
-  font-family: 'Lucida Grande', 'Hiragino Sans GB', 'Hiragino Sans GB', sans-serif, 微软雅黑, 黑体;
+  font-family: 'Maven Pro', 'Hiragino Sans GB', 微软雅黑, 黑体, sans-serif;
 }
 
 a {
   color: #666;
   text-decoration: none;
+}
+
+pre, code {
+  font-family: 'Source Code Pro', monospace, 'Courier New';
 }

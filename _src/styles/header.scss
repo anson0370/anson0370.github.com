@@ -85,7 +85,7 @@ $header-back-color: $color-rule-1;
     @include transition(width 0.3s ease);
 
     &:hover {
-      width: $owner-size * 2;
+      width: $owner-size * 2 - 20px;
 
       .owner-info {
         @include opacity(1);
