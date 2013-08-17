@@ -1,10 +1,9 @@
 @import "common";
 
-$header-border-b-w: 8px;
-$header-border-color: #666;
+$header-back-color: $color-rule-1;
 
 .header {
-  border-bottom: $header-border-b-w solid $header-border-color;
+  background-color: $header-back-color;
 }
 
 .header-container {
@@ -22,11 +21,9 @@ $header-border-color: #666;
     font-size: 26px;
     height: $title-height;
     line-height: $title-height;
-    bottom: -(($title-height + $header-border-b-w) / 2);
-    background-color: $header-border-color;
-    color: white;
+    bottom: -($title-height / 2);
+    background-color: $color-rule-2;
     @include border-radius(5px);
-    @include white-text-shadow;
   }
 
   .site-menu {
@@ -37,6 +34,7 @@ $header-border-color: #666;
       font-size: 16px;
 
       > a {
+        color: $light-font-color;
         display: block;
         padding: 0 45px;
         height: 90px;
@@ -50,7 +48,7 @@ $header-border-color: #666;
           left: 0;
           bottom: 0;
           width: 100%;
-          background-color: $header-border-color;
+          background-color: $color-rule-2;
           @include transition(height 0.2s ease);
         }
 
@@ -59,7 +57,7 @@ $header-border-color: #666;
         }
 
         &:hover {
-          color: white;
+          color: $header-back-color;
 
           > b {
             height: 100%;
@@ -71,19 +69,19 @@ $header-border-color: #666;
 
   .site-owner {
     $owner-size: 150px;
+    $owner-border-width: 8px;
 
     display: block;
     position: absolute;
     z-index: 12;
     right: 0;
-    bottom: -($owner-size / 2 + $header-border-b-w);
+    bottom: -($owner-size / 2 + $owner-border-width);
     text-align: left;
     width: $owner-size;
     height: $owner-size;
-    @include border-radius($owner-size / 2 + $header-border-b-w);
-    background-color: $header-border-color;
-    color: white;
-    border: $header-border-b-w solid $header-border-color;
+    @include border-radius($owner-size / 2 + $owner-border-width);
+    background-color: $color-rule-2;
+    border: $owner-border-width solid $color-rule-2;
     @include transition(width 0.3s ease);
 
     &:hover {
@@ -122,11 +120,6 @@ $header-border-color: #666;
       text-align: right;
       width: $owner-size - 30px;
       margin-top: 15px;
-      @include white-text-shadow;
-
-      a {
-        color: white;
-      }
     }
   }
 }

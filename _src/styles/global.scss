@@ -1,7 +1,8 @@
 @import "compass/reset";
+@import "common";
 
 body {
-  background-color: #ececec;
+  background-color: $color-rule-2;
   color: #666;
   font-size: 12px;
   font-family: 'Lucida Grande', 'Hiragino Sans GB', 'Hiragino Sans GB', sans-serif, 微软雅黑, 黑体;

@@ -5,3 +5,19 @@ $global-width: 1000px;
 @mixin white-text-shadow {
   @include text-shadow(0 1px 3px rgba(black, 0.8));
 }
+
+// color rule
+// $color-rule-1: #424242;
+// $color-rule-2: #D3CEAA;
+// $color-rule-3: #FBF7E4;
+// $color-rule-4: #E7E8D1;
+// $color-rule-5: #8E001C;
+
+$color-rule-1: #444;
+$color-rule-2: #ececec;
+$color-rule-3: white;
+$color-rule-4: #4BB5C1;
+$color-rule-5: #A9CC66;
+// color rule
+
+$light-font-color: $color-rule-3;
