@@ -30,13 +30,42 @@ $header-border-color: #666;
   }
 
   .site-menu {
-    font-size: 16px;
+    font-size: 0;
 
     > li {
       display: inline-block;
-      padding: 0 40px;
-      height: 90px;
-      line-height: 90px;
+      font-size: 16px;
+
+      > a {
+        display: block;
+        padding: 0 45px;
+        height: 90px;
+        line-height: 90px;
+        position: relative;
+        @include transition(color 0.2s ease);
+
+        > b {
+          position: absolute;
+          display: block;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: $header-border-color;
+          @include transition(height 0.2s ease);
+        }
+
+        > span {
+          position: relative;
+        }
+
+        &:hover {
+          color: white;
+
+          > b {
+            height: 100%;
+          }
+        }
+      }
     }
   }
 
@@ -55,7 +84,7 @@ $header-border-color: #666;
     background-color: $header-border-color;
     color: white;
     border: $header-border-b-w solid $header-border-color;
-    @include transition(width 0.5s);
+    @include transition(width 0.5s ease);
 
     &:hover {
       width: $owner-size * 2;
