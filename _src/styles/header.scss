@@ -84,7 +84,7 @@ $header-border-color: #666;
     background-color: $header-border-color;
     color: white;
     border: $header-border-b-w solid $header-border-color;
-    @include transition(width 0.5s ease);
+    @include transition(width 0.3s ease);
 
     &:hover {
       width: $owner-size * 2;
@@ -117,7 +117,7 @@ $header-border-color: #666;
 
     .owner-info {
       @include opacity(0);
-      @include transition(opacity 0.5s);
+      @include transition(opacity 0.3s ease);
       line-height: 30px;
       text-align: right;
       width: $owner-size - 30px;

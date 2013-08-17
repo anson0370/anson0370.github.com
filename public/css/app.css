@@ -176,10 +176,10 @@ a {
   background-color: #666666;
   color: white;
   border: 8px solid #666666;
-  -webkit-transition: width 0.5s ease;
-  -moz-transition: width 0.5s ease;
-  -o-transition: width 0.5s ease;
-  transition: width 0.5s ease;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  -o-transition: width 0.3s ease;
+  transition: width 0.3s ease;
 }
 /* line 89, _src/styles/header.scss */
 .header-container .site-owner:hover {
@@ -225,10 +225,10 @@ a {
 .header-container .site-owner .owner-info {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  -webkit-transition: opacity 0.5s;
-  -moz-transition: opacity 0.5s;
-  -o-transition: opacity 0.5s;
-  transition: opacity 0.5s;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
   line-height: 30px;
   text-align: right;
   width: 120px;
