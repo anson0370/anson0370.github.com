@@ -32,11 +32,16 @@ $post-padding: 40px;
       left: 0;
     }
 
-    > a {
+    > h2 {
+      display: inline;
       color: white;
       font-size: 30px;
       font-weight: bold;
       @include white-text-shadow;
+
+      > a {
+        color: white;
+      }
     }
 
     > span {

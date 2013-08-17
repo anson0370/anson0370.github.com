@@ -74,6 +74,7 @@ body {
 
 /* line 10, _src/styles/global.scss */
 a {
+  color: #666;
   text-decoration: none;
 }
 /* line 3, _src/styles/content.scss */
@@ -249,28 +250,33 @@ a {
   left: 0;
 }
 /* line 35, _src/styles/post.scss */
-.post .post-title > a {
+.post .post-title > h2 {
+  display: inline;
   color: white;
   font-size: 30px;
   font-weight: bold;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
 }
 /* line 42, _src/styles/post.scss */
+.post .post-title > h2 > a {
+  color: white;
+}
+/* line 47, _src/styles/post.scss */
 .post .post-title > span {
   margin-left: 30px;
   color: white;
   font-size: 16px;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
 }
-/* line 50, _src/styles/post.scss */
+/* line 55, _src/styles/post.scss */
 .post .post-content {
   margin-top: 40px;
 }
-/* line 54, _src/styles/post.scss */
+/* line 59, _src/styles/post.scss */
 .post p {
   margin: 20px 0;
 }
-/* line 58, _src/styles/post.scss */
+/* line 63, _src/styles/post.scss */
 .post .highlight {
   width: 918px;
   margin-left: -40px;
