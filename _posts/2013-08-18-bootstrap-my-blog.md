@@ -14,8 +14,8 @@ blog 来来回回折腾过不知道多少次，wordpress 的折腾过好几个�
 - Github Pages -- 托管
 - Jekyll -- 生成 blog 页面
 - Linner -- web 资源打包
-- FontAwesome -- 各种矢量图标
-- GoogleWebFont -- web font 可惜没中文
+- Font Awesome -- 各种矢量图标
+- Google Fonts -- web font 可惜没中文
 - DISQUS -- 提供评论
 
 以上来源在页脚的 Powered by 里都列出了。

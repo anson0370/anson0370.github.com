@@ -3,7 +3,7 @@
   <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>{{ page.title }}</title>
+      <title>Anson{% if page.title %} - {{ page.title }}{% endif %}</title>
       <meta name="viewport" content="width=device-width">
 
       <!-- font awesome -->
@@ -20,11 +20,11 @@
   <body>
     <div class="header">
       <div class="header-container">
-        <h1 class="site-title">这里只写废话</h1>
+        <h1 class="site-title">{{ site.name }}</h1>
         <ul class="site-menu">
           <li><a href="/"><b></b><span><i class="icon-home icon-large"></i>&nbsp;HOME</span></a></li>
           <li><a href="https://github.com/anson0370" target="_blank"><b></b><span><i class="icon-github icon-large"></i>&nbsp;GITHUB</span></a></li>
-          <li><a href="/about"><b></b><span><i class="icon-smile icon-large"></i>&nbsp;ABOUT</span></a></li>
+          <li><a href="/about.html"><b></b><span><i class="icon-smile icon-large"></i>&nbsp;ABOUT</span></a></li>
         </ul>
         <div class="site-owner">
           <ul class="owner-info">
@@ -50,8 +50,8 @@
             <li><a href="https://help.github.com/categories/20/articles" target="_blank">Pages</a></li>
             <li><a href="http://jekyllrb.com/" target="_blank">Jekyll</a></li>
             <li><a href="https://github.com/SaitoWu/linner" target="_blank">Linner</a></li>
-            <li><a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">FontAwesome</a></li>
-            <li><a href="http://www.google.com/fonts/" target="_blank">WebFonts</a></li>
+            <li><a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a></li>
+            <li><a href="http://www.google.com/fonts/" target="_blank">Google Fonts</a></li>
             <li><a href="http://disqus.com/" target="_blank">DISQUS</a></li>
           </ul>
         </span>

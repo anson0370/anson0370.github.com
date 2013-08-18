@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/css?family=Maven+Pro);
+@import url(http://fonts.googleapis.com/css?family=Arvo);
 /* line 17, /Users/anson/.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -65,15 +65,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 8, _src/styles/global.scss */
+/* line 9, _src/styles/global.scss */
 body {
   background-color: #ececec;
   color: #666666;
   font-size: 12px;
-  font-family: 'Maven Pro', 'Hiragino Sans GB', 微软雅黑, 黑体, sans-serif;
+  font-family: 'Arvo', 'Hiragino Sans GB', 微软雅黑, 黑体, sans-serif;
 }
 
-/* line 15, _src/styles/global.scss */
+/* line 16, _src/styles/global.scss */
 a {
   color: #4bb5c1;
   text-decoration: none;
@@ -82,12 +82,12 @@ a {
   -o-transition: color, 0.2s;
   transition: color, 0.2s;
 }
-/* line 21, _src/styles/global.scss */
+/* line 22, _src/styles/global.scss */
 a:hover {
   color: #3897a1;
 }
 
-/* line 26, _src/styles/global.scss */
+/* line 27, _src/styles/global.scss */
 pre, code {
   font-family: 'Source Code Pro', monospace, 'Courier New';
 }
@@ -98,7 +98,7 @@ pre, code {
 }
 /* line 7, _src/styles/content.scss */
 .content-container .disqus-wrap {
-  margin-top: 40px;
+  margin-top: 80px;
 }
 /* line 3, _src/styles/footer.scss */
 .footer-container {
@@ -292,10 +292,35 @@ pre, code {
   color: black;
 }
 /* line 7, _src/styles/markdown.scss */
+.md h1, .md h2, .md h3, .md h4, .md h5 {
+  margin: 1.5em 0;
+}
+/* line 11, _src/styles/markdown.scss */
+.md h1 {
+  font-size: 2.5em;
+}
+/* line 15, _src/styles/markdown.scss */
+.md h2 {
+  font-size: 2em;
+}
+/* line 19, _src/styles/markdown.scss */
+.md h3 {
+  font-size: 1.5em;
+}
+/* line 23, _src/styles/markdown.scss */
+.md h4 {
+  font-size: 1.2em;
+}
+/* line 27, _src/styles/markdown.scss */
+.md h5 {
+  font-size: 1em;
+  font-weight: bold;
+}
+/* line 32, _src/styles/markdown.scss */
 .md p {
   margin: 20px 0;
 }
-/* line 11, _src/styles/markdown.scss */
+/* line 36, _src/styles/markdown.scss */
 .md code {
   border: 1px solid #b9b9b9;
   background-color: #ececec;
@@ -306,29 +331,29 @@ pre, code {
   -o-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 18, _src/styles/markdown.scss */
+/* line 43, _src/styles/markdown.scss */
 .md pre code {
   border: none;
   background: none;
   padding: 0;
 }
-/* line 24, _src/styles/markdown.scss */
+/* line 49, _src/styles/markdown.scss */
 .md ul, .md ol {
   padding-left: 2em;
 }
-/* line 27, _src/styles/markdown.scss */
+/* line 52, _src/styles/markdown.scss */
 .md ul ul, .md ol ul {
   list-style: circle;
 }
-/* line 31, _src/styles/markdown.scss */
+/* line 56, _src/styles/markdown.scss */
 .md ul ol, .md ol ol {
   list-style: lower-latin;
 }
-/* line 36, _src/styles/markdown.scss */
+/* line 61, _src/styles/markdown.scss */
 .md ul {
   list-style: disc;
 }
-/* line 40, _src/styles/markdown.scss */
+/* line 65, _src/styles/markdown.scss */
 .md ol {
   list-style: decimal;
 }
