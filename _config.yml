@@ -2,3 +2,6 @@ name: Your New Jekyll Site
 markdown: redcarpet
 pygments: true
 exclude: ['Linnerfile']
+
+paginate: 5
+paginate_path: "/page:num"

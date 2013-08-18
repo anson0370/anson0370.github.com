@@ -4,7 +4,7 @@ title: 这里只写废话
 ---
 
 <ul class="posts">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
   <li class="post">
     <div class="post-title">
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
@@ -19,3 +19,5 @@ title: 这里只写废话
   </li>
   {% endfor %}
 </ul>
+
+{% include pagination.html %}

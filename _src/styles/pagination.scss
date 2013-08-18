@@ -1,0 +1,13 @@
+@import "common";
+
+#pagination {
+  font-size: 14px;
+  padding-left: 10px;
+
+  > ol {
+    > li {
+      display: inline-block;
+      padding: 0 5px;
+    }
+  }
+}

@@ -4,6 +4,12 @@ $post-padding: 40px;
 $post-border-color: darken($color-rule-2, 20%);
 $post-code-back: $color-rule-2;
 
+.posts {
+  > li {
+    margin: 40px 0;
+  }
+}
+
 .post {
   background-color: white;
   border: 1px solid $post-border-color;
