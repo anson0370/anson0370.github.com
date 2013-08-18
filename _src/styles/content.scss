@@ -3,4 +3,8 @@
 .content-container {
   width: $global-width;
   margin: 90px auto;
+
+  .disqus-wrap {
+    margin-top: 40px;
+  }
 }

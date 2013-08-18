@@ -2,7 +2,6 @@
 
 $post-padding: 40px;
 $post-border-color: darken($color-rule-2, 20%);
-// $post-border-color: $color-rule-4;
 $post-code-back: $color-rule-2;
 
 .post {
@@ -12,7 +11,7 @@ $post-code-back: $color-rule-2;
   z-index: 11;
   @include border-radius(5px);
 
-  padding: 20px $post-padding $post-padding;
+  padding: 20px $post-padding;
 
   .post-title {
     $start-color: lighten($color-rule-5, 5%);

@@ -96,6 +96,10 @@ pre, code {
   width: 1000px;
   margin: 90px auto;
 }
+/* line 7, _src/styles/content.scss */
+.content-container .disqus-wrap {
+  margin-top: 40px;
+}
 /* line 3, _src/styles/footer.scss */
 .footer-container {
   width: 1000px;
@@ -287,7 +291,7 @@ pre, code {
 .header-container .site-owner .owner-info a:hover {
   color: black;
 }
-/* line 8, _src/styles/post.scss */
+/* line 7, _src/styles/post.scss */
 .post {
   background-color: white;
   border: 1px solid #b9b9b9;
@@ -298,9 +302,9 @@ pre, code {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  padding: 20px 40px 40px;
+  padding: 20px 40px;
 }
-/* line 17, _src/styles/post.scss */
+/* line 16, _src/styles/post.scss */
 .post .post-title {
   position: relative;
   width: 100%;
@@ -321,7 +325,7 @@ pre, code {
   -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 -1px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 -1px rgba(0, 0, 0, 0.3);
 }
-/* line 30, _src/styles/post.scss */
+/* line 29, _src/styles/post.scss */
 .post .post-title:before {
   content: "";
   display: block;
@@ -332,7 +336,7 @@ pre, code {
   top: -8px;
   left: 0;
 }
-/* line 41, _src/styles/post.scss */
+/* line 40, _src/styles/post.scss */
 .post .post-title > h2 {
   display: inline;
   color: white;
@@ -340,28 +344,28 @@ pre, code {
   font-weight: bold;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
 }
-/* line 48, _src/styles/post.scss */
+/* line 47, _src/styles/post.scss */
 .post .post-title > h2 > a {
   color: white;
 }
-/* line 53, _src/styles/post.scss */
+/* line 52, _src/styles/post.scss */
 .post .post-title > span {
   margin-left: 30px;
   color: white;
   font-size: 16px;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
 }
-/* line 61, _src/styles/post.scss */
+/* line 60, _src/styles/post.scss */
 .post .post-content {
   margin-top: 40px;
   line-height: 2em;
 }
 
-/* line 69, _src/styles/post.scss */
+/* line 68, _src/styles/post.scss */
 .post p {
   margin: 20px 0;
 }
-/* line 73, _src/styles/post.scss */
+/* line 72, _src/styles/post.scss */
 .post code {
   border: 1px solid #b9b9b9;
   background-color: #ececec;
@@ -372,7 +376,7 @@ pre, code {
   -o-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 80, _src/styles/post.scss */
+/* line 79, _src/styles/post.scss */
 .post .highlight {
   width: 918px;
   margin-left: -40px;
@@ -384,7 +388,7 @@ pre, code {
   -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.5);
 }
-/* line 89, _src/styles/post.scss */
+/* line 88, _src/styles/post.scss */
 .post .highlight code {
   border: none;
   background: none;
