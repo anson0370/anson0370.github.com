@@ -67,7 +67,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 9, _src/styles/global.scss */
 body {
-  background-color: #ececec;
+  background-color: #ecf0f1;
   color: #666666;
   font-size: 12px;
   font-family: 'Arvo', 'Hiragino Sans GB', 微软雅黑, 黑体, sans-serif;
@@ -106,7 +106,7 @@ pre, code {
   margin: 0 auto;
   padding: 30px 0;
   text-align: center;
-  border-top: 1px solid #b9b9b9;
+  border-top: 1px solid #b1c2c6;
   -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5);
   -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.5);
@@ -154,7 +154,7 @@ pre, code {
   height: 50px;
   line-height: 50px;
   bottom: -25px;
-  background-color: #ececec;
+  background-color: #ecf0f1;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -190,7 +190,7 @@ pre, code {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #ececec;
+  background-color: #ecf0f1;
   -webkit-transition: height 0.2s ease;
   -moz-transition: height 0.2s ease;
   -o-transition: height 0.2s ease;
@@ -223,8 +223,8 @@ pre, code {
   -ms-border-radius: 83px;
   -o-border-radius: 83px;
   border-radius: 83px;
-  background-color: #ececec;
-  border: 8px solid #ececec;
+  background-color: #ecf0f1;
+  border: 8px solid #ecf0f1;
   -webkit-transition: width 0.3s ease;
   -moz-transition: width 0.3s ease;
   -o-transition: width 0.3s ease;
@@ -322,8 +322,8 @@ pre, code {
 }
 /* line 36, _src/styles/markdown.scss */
 .md code {
-  border: 1px solid #b9b9b9;
-  background-color: #ececec;
+  border: 1px solid #b1c2c6;
+  background-color: #ecf0f1;
   padding: 2px 5px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -375,7 +375,7 @@ pre, code {
 /* line 13, _src/styles/post.scss */
 .post {
   background-color: white;
-  border: 1px solid #b9b9b9;
+  border: 1px solid #b1c2c6;
   border-bottom-width: 2px;
   z-index: 11;
   -webkit-border-radius: 5px;
@@ -447,9 +447,9 @@ pre, code {
   width: 918px;
   margin-left: -40px;
   padding: 20px 40px;
-  background-color: #ececec;
-  border-top: 1px solid #b9b9b9;
-  border-bottom: 1px solid #b9b9b9;
+  background-color: #ecf0f1;
+  border-top: 1px solid #b1c2c6;
+  border-bottom: 1px solid #b1c2c6;
   -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5);
   -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.5);
