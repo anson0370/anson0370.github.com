@@ -2,16 +2,19 @@
 <nav id="pagination">
   <ol>
     {% if paginator.previous_page %}
+    {% if paginator.previous_page > 1 %}
+      {% capture page_url %}page/{{ paginator.previous_page }}{% endcapture %}
+    {% endif %}
     <li>
       <a href="/{{ page_url }}" title="Go to previous page">
-        &laquo;
+        <i class="icon-double-angle-left"></i>
       </a>
     </li>
     {% endif %}
     {% for page in (1..paginator.total_pages) %}
     <li>
       {% if page > 1 %}
-        {% capture page_url %}page{{ page }}{% endcapture%}
+        {% capture page_url %}page/{{ page }}{% endcapture %}
       {% endif %}
       {% if page == paginator.page %}
         {{ page }}
@@ -22,8 +25,8 @@
     {% endfor %}
     {% if paginator.next_page %}
     <li>
-      <a href="/page{{ paginator.next_page }}" title="Go to next page">
-        &raquo;
+      <a href="/page/{{ paginator.next_page }}" title="Go to next page">
+        <i class="icon-double-angle-right"></i>
       </a>
     </li>
     {% endif %}
