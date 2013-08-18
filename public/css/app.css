@@ -373,16 +373,15 @@ pre, code {
 /* line 80, _src/styles/markdown.scss */
 .md hr {
   border-top: 1px dashed #b1c2c6;
-  border-bottom: 1px dashed #ecf0f1;
   border-left: none;
 }
-/* line 86, _src/styles/markdown.scss */
+/* line 85, _src/styles/markdown.scss */
 .md blockquote {
   color: #999999;
   padding: 0 0 0 30px;
   position: relative;
 }
-/* line 91, _src/styles/markdown.scss */
+/* line 90, _src/styles/markdown.scss */
 .md blockquote:before {
   font-family: FontAwesome;
   font-size: 1.5em;
