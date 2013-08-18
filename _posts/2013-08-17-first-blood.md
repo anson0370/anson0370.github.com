@@ -7,6 +7,8 @@ categories: "stuff"
 
 The first post for my blog in github pages.
 
+Inner `code test` here.
+
 {% highlight ruby %}
 # some test code
 def print_hi(name)

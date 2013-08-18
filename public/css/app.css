@@ -291,71 +291,106 @@ pre, code {
 .header-container .site-owner .owner-info a:hover {
   color: black;
 }
-/* line 7, _src/styles/markdown.scss */
+/* line 6, _src/styles/markdown.scss */
+.md {
+  line-height: 2em;
+}
+/* line 9, _src/styles/markdown.scss */
 .md h1, .md h2, .md h3, .md h4, .md h5 {
   margin: 1.5em 0;
 }
-/* line 11, _src/styles/markdown.scss */
+/* line 13, _src/styles/markdown.scss */
 .md h1 {
   font-size: 2.5em;
 }
-/* line 15, _src/styles/markdown.scss */
+/* line 17, _src/styles/markdown.scss */
 .md h2 {
   font-size: 2em;
 }
-/* line 19, _src/styles/markdown.scss */
+/* line 21, _src/styles/markdown.scss */
 .md h3 {
   font-size: 1.5em;
 }
-/* line 23, _src/styles/markdown.scss */
+/* line 25, _src/styles/markdown.scss */
 .md h4 {
   font-size: 1.2em;
 }
-/* line 27, _src/styles/markdown.scss */
+/* line 29, _src/styles/markdown.scss */
 .md h5 {
   font-size: 1em;
   font-weight: bold;
 }
-/* line 32, _src/styles/markdown.scss */
+/* line 34, _src/styles/markdown.scss */
 .md p {
-  margin: 20px 0;
+  margin: 1em 0;
 }
-/* line 36, _src/styles/markdown.scss */
-.md code {
+/* line 38, _src/styles/markdown.scss */
+.md code, .md pre {
   border: 1px solid #b1c2c6;
   background-color: #ecf0f1;
   padding: 2px 5px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
 }
-/* line 43, _src/styles/markdown.scss */
+/* line 45, _src/styles/markdown.scss */
+.md pre {
+  padding: 10px 20px;
+}
+/* line 49, _src/styles/markdown.scss */
 .md pre code {
   border: none;
   background: none;
   padding: 0;
 }
-/* line 49, _src/styles/markdown.scss */
+/* line 55, _src/styles/markdown.scss */
+.md .highlight {
+  background: none;
+}
+/* line 59, _src/styles/markdown.scss */
 .md ul, .md ol {
+  margin: 1em 0px;
   padding-left: 2em;
 }
-/* line 52, _src/styles/markdown.scss */
+/* line 63, _src/styles/markdown.scss */
 .md ul ul, .md ol ul {
   list-style: circle;
 }
-/* line 56, _src/styles/markdown.scss */
+/* line 67, _src/styles/markdown.scss */
 .md ul ol, .md ol ol {
   list-style: lower-latin;
 }
-/* line 61, _src/styles/markdown.scss */
+/* line 72, _src/styles/markdown.scss */
 .md ul {
   list-style: disc;
 }
-/* line 65, _src/styles/markdown.scss */
+/* line 76, _src/styles/markdown.scss */
 .md ol {
   list-style: decimal;
+}
+/* line 80, _src/styles/markdown.scss */
+.md hr {
+  border-top: 1px dashed #b1c2c6;
+  border-bottom: 1px dashed #ecf0f1;
+  border-left: none;
+}
+/* line 86, _src/styles/markdown.scss */
+.md blockquote {
+  color: #999999;
+  padding: 0 0 0 30px;
+  position: relative;
+}
+/* line 91, _src/styles/markdown.scss */
+.md blockquote:before {
+  font-family: FontAwesome;
+  font-size: 1.5em;
+  content: "\f10d";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 /* line 3, _src/styles/pagination.scss */
 #pagination {
@@ -439,17 +474,18 @@ pre, code {
 /* line 66, _src/styles/post.scss */
 .post .post-content {
   margin-top: 40px;
-  line-height: 2em;
 }
 
-/* line 74, _src/styles/post.scss */
-.md.post-content .highlight {
-  width: 918px;
-  margin-left: -40px;
+/* line 73, _src/styles/post.scss */
+.md.post-content pre {
+  width: 100%;
+  margin-left: -41px;
   padding: 20px 40px;
-  background-color: #ecf0f1;
-  border-top: 1px solid #b1c2c6;
-  border-bottom: 1px solid #b1c2c6;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
   -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5);
   -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.5);

@@ -1,9 +1,11 @@
 @import "common";
 
-$code-border: darken($color-rule-2, 20%);
-$code-back: $color-rule-2;
+$border-color: darken($color-rule-2, 20%);
+$back-color: $color-rule-3;
 
 .md {
+  line-height: 2em;
+
   h1, h2, h3, h4, h5 {
     margin: 1.5em 0;
   }
@@ -30,14 +32,18 @@ $code-back: $color-rule-2;
   }
 
   p {
-    margin: 20px 0;
+    margin: 1em 0;
   }
 
-  code {
-    border: 1px solid $code-border;
-    background-color: $code-back;
+  code, pre {
+    border: 1px solid $border-color;
+    background-color: $back-color;
     padding: 2px 5px;
-    @include border-radius(2px);
+    @include border-radius(5px);
+  }
+
+  pre {
+    padding: 10px 20px;
   }
 
   pre code {
@@ -46,7 +52,12 @@ $code-back: $color-rule-2;
     padding: 0;
   }
 
+  .highlight {
+    background: none;
+  }
+
   ul, ol {
+    margin: 1em 0px;
     padding-left: 2em;
 
     ul {
@@ -64,5 +75,27 @@ $code-back: $color-rule-2;
 
   ol {
     list-style: decimal;
+  }
+
+  hr {
+    border-top: 1px dashed $border-color;
+    border-bottom: 1px dashed $back-color;
+    border-left: none;
+  }
+
+  blockquote {
+    color: lighten($font-color, 20%);
+    padding: 0 0 0 30px;
+    position: relative;
+
+    &:before {
+      font-family: FontAwesome;
+      font-size: 1.5em;
+      content: "\f10d";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 }

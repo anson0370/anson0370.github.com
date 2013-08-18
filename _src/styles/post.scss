@@ -2,7 +2,7 @@
 
 $post-padding: 40px;
 $post-border-color: darken($color-rule-2, 20%);
-$post-code-back: $color-rule-2;
+$post-code-back: $color-rule-3;
 
 .posts {
   > .post {
@@ -65,19 +65,16 @@ $post-code-back: $color-rule-2;
 
   .post-content {
     margin-top: $post-padding;
-    line-height: 2em;
   }
 }
 
 // post content style
 .md.post-content {
-  .highlight {
-    width: $global-width - ($post-padding * 2) - 2px;
-    margin-left: -$post-padding;
+  pre {
+    width: 100%;
+    margin-left: -($post-padding + 1px);
     padding: 20px $post-padding;
-    background-color: $post-code-back;
-    border-top: 1px solid $post-border-color;
-    border-bottom: 1px solid $post-border-color;
+    @include border-radius(0);
     @include box-shadow(inset 0 1px rgba(white, 0.5));
   }
 }
