@@ -291,6 +291,47 @@ pre, code {
 .header-container .site-owner .owner-info a:hover {
   color: black;
 }
+/* line 7, _src/styles/markdown.scss */
+.md p {
+  margin: 20px 0;
+}
+/* line 11, _src/styles/markdown.scss */
+.md code {
+  border: 1px solid #b9b9b9;
+  background-color: #ececec;
+  padding: 2px 5px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 18, _src/styles/markdown.scss */
+.md pre code {
+  border: none;
+  background: none;
+  padding: 0;
+}
+/* line 24, _src/styles/markdown.scss */
+.md ul, .md ol {
+  padding-left: 2em;
+}
+/* line 27, _src/styles/markdown.scss */
+.md ul ul, .md ol ul {
+  list-style: circle;
+}
+/* line 31, _src/styles/markdown.scss */
+.md ul ol, .md ol ol {
+  list-style: lower-latin;
+}
+/* line 36, _src/styles/markdown.scss */
+.md ul {
+  list-style: disc;
+}
+/* line 40, _src/styles/markdown.scss */
+.md ol {
+  list-style: decimal;
+}
 /* line 3, _src/styles/pagination.scss */
 #pagination {
   font-size: 14px;
@@ -302,7 +343,7 @@ pre, code {
   padding: 0 5px;
 }
 /* line 8, _src/styles/post.scss */
-.posts > li {
+.posts > .post {
   margin: 40px 0;
 }
 
@@ -377,22 +418,7 @@ pre, code {
 }
 
 /* line 74, _src/styles/post.scss */
-.post p {
-  margin: 20px 0;
-}
-/* line 78, _src/styles/post.scss */
-.post code {
-  border: 1px solid #b9b9b9;
-  background-color: #ececec;
-  padding: 2px 5px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
-}
-/* line 85, _src/styles/post.scss */
-.post .highlight {
+.md.post-content .highlight {
   width: 918px;
   margin-left: -40px;
   padding: 20px 40px;
@@ -402,10 +428,4 @@ pre, code {
   -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5);
   -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.5);
-}
-/* line 94, _src/styles/post.scss */
-.post .highlight code {
-  border: none;
-  background: none;
-  padding: 0;
 }

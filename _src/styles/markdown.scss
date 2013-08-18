@@ -1,0 +1,43 @@
+@import "common";
+
+$code-border: darken($color-rule-2, 20%);
+$code-back: $color-rule-2;
+
+.md {
+  p {
+    margin: 20px 0;
+  }
+
+  code {
+    border: 1px solid $code-border;
+    background-color: $code-back;
+    padding: 2px 5px;
+    @include border-radius(2px);
+  }
+
+  pre code {
+    border: none;
+    background: none;
+    padding: 0;
+  }
+
+  ul, ol {
+    padding-left: 2em;
+
+    ul {
+      list-style: circle;
+    }
+
+    ol {
+      list-style: lower-latin;
+    }
+  }
+
+  ul {
+    list-style: disc;
+  }
+
+  ol {
+    list-style: decimal;
+  }
+}
