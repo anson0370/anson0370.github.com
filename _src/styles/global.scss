@@ -7,14 +7,20 @@
 
 body {
   background-color: $color-rule-2;
-  color: #666;
+  color: $font-color;
   font-size: 12px;
   font-family: 'Maven Pro', 'Hiragino Sans GB', 微软雅黑, 黑体, sans-serif;
 }
 
 a {
-  color: #666;
+  color: $color-rule-4;
   text-decoration: none;
+
+  @include transition(color, 0.2s);
+
+  &:hover {
+    color: darken($color-rule-4, 10%);
+  }
 }
 
 pre, code {

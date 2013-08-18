@@ -120,6 +120,14 @@ $header-back-color: $color-rule-1;
       text-align: right;
       width: $owner-size - 30px;
       margin-top: 15px;
+
+      a {
+        color: $font-color;
+
+        &:hover {
+          color: black;
+        }
+      }
     }
   }
 }

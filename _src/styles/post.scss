@@ -62,7 +62,10 @@ $post-code-back: $color-rule-2;
     margin-top: $post-padding;
     line-height: 2em;
   }
+}
 
+// post content style
+.post {
   p {
     margin: 20px 0;
   }
@@ -81,16 +84,12 @@ $post-code-back: $color-rule-2;
     background-color: $post-code-back;
     border-top: 1px solid $post-border-color;
     border-bottom: 1px solid $post-border-color;
+    @include box-shadow(inset 0 1px rgba(white, 0.5));
 
     code {
       border: none;
       background: none;
       padding: 0;
     }
-  }
-
-  a {
-    // color: #0086B3;
-    color: $color-rule-4;
   }
 }
