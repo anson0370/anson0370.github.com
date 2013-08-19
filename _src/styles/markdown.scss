@@ -44,6 +44,7 @@ $border-color: darken($color-rule-2, 20%);
     border: 1px solid $border-color;
     padding: 10px 20px;
     overflow: scroll;
+    line-height: 1.5em;
   }
 
   pre code {
