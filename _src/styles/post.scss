@@ -70,6 +70,10 @@ $post-code-back: $color-rule-3;
 
 // post content style
 .md.post-content {
+  code, pre {
+    background-color: $post-code-back;
+  }
+
   pre {
     width: 100%;
     margin-left: -($post-padding + 1px);

@@ -1,7 +1,6 @@
 @import "common";
 
 $border-color: darken($color-rule-2, 20%);
-$back-color: $color-rule-3;
 
 .md {
   line-height: 2em;
@@ -36,13 +35,13 @@ $back-color: $color-rule-3;
   }
 
   code, pre {
-    border: 1px solid $border-color;
-    background-color: $back-color;
+    background-color: white;
     padding: 2px 5px;
     @include border-radius(5px);
   }
 
   pre {
+    border: 1px solid $border-color;
     padding: 10px 20px;
     overflow: scroll;
   }
