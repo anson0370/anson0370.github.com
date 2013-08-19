@@ -321,7 +321,7 @@ pre, code {
   font-weight: bold;
 }
 /* line 34, _src/styles/markdown.scss */
-.md p {
+.md p, .md pre {
   margin: 1em 0;
 }
 /* line 38, _src/styles/markdown.scss */
