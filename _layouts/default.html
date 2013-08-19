@@ -23,15 +23,15 @@
         <h1 class="site-title">{{ site.name }}</h1>
         <ul class="site-menu">
           <li><a href="/"><b></b><span><i class="icon-home icon-large"></i>&nbsp;HOME</span></a></li>
-          <li><a href="https://github.com/anson0370" target="_blank"><b></b><span><i class="icon-github icon-large"></i>&nbsp;GITHUB</span></a></li>
+          <li><a href="https://github.com/{{ site.author.github }}" target="_blank"><b></b><span><i class="icon-github icon-large"></i>&nbsp;GITHUB</span></a></li>
           <li><a href="/about.html"><b></b><span><i class="icon-smile icon-large"></i>&nbsp;ABOUT</span></a></li>
         </ul>
         <div class="site-owner">
           <ul class="owner-info">
-            <li class="owner-name">Anson Chan&nbsp;<i class="icon-user"></i></li>
-            <li class="owner-position">Hangzhou&nbsp;<i class="icon-map-marker"></i></li>
-            <li class="owner-weibo"><a href="http://weibo.com/anson0370" target="_blank">@叫你不戴帽子</a>&nbsp;<i class="icon-weibo"></i></li>
-            <li class="owner-twitter"><a href="https://twitter.com/anson0370" target="_blank">@anson0370</a>&nbsp;<i class="icon-twitter"></i></li>
+            <li class="owner-name">{{ site.author.fullname }}&nbsp;<i class="icon-user"></i></li>
+            <li class="owner-position">{{ site.author.position }}&nbsp;<i class="icon-map-marker"></i></li>
+            <li class="owner-weibo"><a href="{{ site.author.weibo.url }}" target="_blank">{{ site.author.weibo.name }}</a>&nbsp;<i class="icon-weibo"></i></li>
+            <li class="owner-twitter"><a href="{{ site.author.twitter.url }}" target="_blank">{{ site.author.twitter.name }}</a>&nbsp;<i class="icon-twitter"></i></li>
           </ul>
           <img src="/public/img/avatar.png" alt="" class="owner-avatar"><b></b>
         </div>

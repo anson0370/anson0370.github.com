@@ -5,7 +5,7 @@ title: About me
 
 ## Contact
 
-This is a personal blog created by Anson. You can find me [here <i class="icon-weibo"></i>](http://weibo.com/anson0370) and [here <i class="icon-twitter"></i>](https://twitter.com/anson0370), or send email to [<i class="icon-envelope"></i> anson0370@gmail.com](anson0370@gmail.com).
+This is a personal blog created by Anson. You can find me [here <i class="icon-weibo"></i>]({{ site.author.weibo.url }}) and [here <i class="icon-twitter"></i>]({{ site.author.twitter.url }}), or send email to [<i class="icon-envelope"></i> {{ site.author.email }}](mailto:{{ site.author.email }}).
 
 ## Experience
 

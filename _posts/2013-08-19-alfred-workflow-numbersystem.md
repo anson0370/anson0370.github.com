@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A alfred workflow for number system convert"
+title: "An Alfred workflow for number system convert"
 data: 2013-08-19 14:03:00
 categories: "productivity"
 ---
