@@ -81,6 +81,7 @@ $border-color: darken($color-rule-2, 20%);
   hr {
     border-top: 1px dashed $border-color;
     border-left: none;
+    border-bottom: none;
   }
 
   blockquote {
