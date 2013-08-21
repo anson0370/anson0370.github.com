@@ -394,6 +394,10 @@ pre, code {
   top: 0;
   left: 0;
 }
+/* line 103, _src/styles/markdown.scss */
+.md strong {
+  font-weight: bold;
+}
 /* line 3, _src/styles/pagination.scss */
 #pagination {
   font-size: 14px;
