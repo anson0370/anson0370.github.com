@@ -14,11 +14,6 @@ groups:
       "css/app.css": "{_src/styles/**/[a-z]*.{css,scss,sass}}"
     order:
       - "_src/styles/global.scss"
-  images:
-    paths:
-      - "_src/images"
-    copy:
-      "img/": "_src/images/**/*.{png,gif,jpg}"
 modules:
   wrapper: "CMD"
   definition: "js/app.js"
