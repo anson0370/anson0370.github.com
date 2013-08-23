@@ -1,7 +1,64 @@
 @import "common";
 
+$bread-img-width: 300px;
+$bread-img-height: 450px;
+
 .s404-container {
-  padding: 100px 0;
+  padding: 50px 0;
+}
+
+.s404-bread {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+
+  img {
+    width: $bread-img-width;
+    height: $bread-img-height;
+    @include border-radius(10px);
+    @include box-shadow(0 0 3px rgba(black, 0.6));
+
+    & + b {
+      display: block;
+      position: absolute;
+      width: $bread-img-width - 2px;
+      height: $bread-img-height - 2px;
+      top: 0;
+      left: 0;
+      @include border-radius(10px);
+      border: 1px solid rgba(white, 0.4);
+    }
+  }
+
+  .self-intro {
+    display: block;
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+
+    white-space: nowrap;
+
+    padding: 10px;
+    background-color: white;
+    @include opacity(0);
+    @include border-radius(5px);
+    @include box-shadow(0 0 3px rgba(black, 0.6));
+
+    @include transition(opacity 0.5s);
+  }
+
+  &:hover {
+    .self-intro {
+      @include opacity(0.8);
+    }
+  }
+}
+
+.s404-content {
+  width: $global-width - $bread-img-width - 12px;
+  display: inline-block;
+  vertical-align: middle;
   position: relative;
 
   .back {
@@ -12,9 +69,9 @@
   .front {
     position: absolute;
     text-align: center;
-    width: 50%;
+    width: 70%;
     top: 50%;
-    left: 25%;
+    left: 15%;
     line-height: 2.5em;
     border-top: 4px solid $font-color;
     border-bottom: 4px solid $font-color;
