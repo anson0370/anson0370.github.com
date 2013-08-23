@@ -500,3 +500,29 @@ pre, code {
   -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.5);
 }
+/* line 3, _src/styles/s404.scss */
+.s404-container {
+  padding: 100px 0;
+  position: relative;
+}
+/* line 7, _src/styles/s404.scss */
+.s404-container .back {
+  font-size: 15em;
+  text-align: center;
+}
+/* line 12, _src/styles/s404.scss */
+.s404-container .front {
+  position: absolute;
+  text-align: center;
+  width: 50%;
+  top: 50%;
+  left: 25%;
+  line-height: 2.5em;
+  border-top: 4px solid #666666;
+  border-bottom: 4px solid #666666;
+  background-color: #ecf0f1;
+  -webkit-box-shadow: inset 0 1px white;
+  -moz-box-shadow: inset 0 1px white;
+  box-shadow: inset 0 1px white;
+  text-shadow: 0 -1px white;
+}
