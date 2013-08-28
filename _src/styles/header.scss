@@ -116,7 +116,7 @@ $header-back-color: $color-rule-1;
     .owner-info {
       @include opacity(0);
       @include transition(opacity 0.3s ease);
-      line-height: 30px;
+      line-height: 25px;
       text-align: right;
       width: $owner-size - 30px;
       margin-top: 15px;
