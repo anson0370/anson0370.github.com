@@ -1,9 +1,15 @@
 @import "common";
 
 $header-back-color: $color-rule-1;
+$header-height: 90px;
 
 .header {
   background-color: $header-back-color;
+  width: 100%;
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  left: 0;
 }
 
 .header-container {
@@ -37,8 +43,8 @@ $header-back-color: $color-rule-1;
         color: $light-font-color;
         display: block;
         padding: 0 40px;
-        height: 90px;
-        line-height: 90px;
+        height: $header-height;
+        line-height: $header-height;
         position: relative;
         @include transition(color 0.2s ease);
 
