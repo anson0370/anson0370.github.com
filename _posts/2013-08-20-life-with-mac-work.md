@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Life with Mac -  Work
+title: Life with Mac - Work
 data: 2013-08-20 17:52:00
 categories: "mac"
 ---

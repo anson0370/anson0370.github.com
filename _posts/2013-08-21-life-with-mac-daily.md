@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Life with Mac -  Daily
+title: Life with Mac - Daily
 data: 2013-08-21 21:53:00
 categories: "mac"
 ---
