@@ -341,38 +341,39 @@ pre, code {
 }
 /* line 5, _src/styles/markdown.scss */
 .md {
+  font-size: 14px;
   line-height: 2em;
 }
-/* line 8, _src/styles/markdown.scss */
+/* line 9, _src/styles/markdown.scss */
 .md h1, .md h2, .md h3, .md h4, .md h5 {
   margin: 1.5em 0;
 }
-/* line 12, _src/styles/markdown.scss */
+/* line 13, _src/styles/markdown.scss */
 .md h1 {
-  font-size: 2.5em;
-}
-/* line 16, _src/styles/markdown.scss */
-.md h2 {
   font-size: 2em;
 }
-/* line 20, _src/styles/markdown.scss */
+/* line 17, _src/styles/markdown.scss */
+.md h2 {
+  font-size: 1.8em;
+}
+/* line 21, _src/styles/markdown.scss */
 .md h3 {
   font-size: 1.5em;
 }
-/* line 24, _src/styles/markdown.scss */
+/* line 25, _src/styles/markdown.scss */
 .md h4 {
   font-size: 1.2em;
 }
-/* line 28, _src/styles/markdown.scss */
+/* line 29, _src/styles/markdown.scss */
 .md h5 {
   font-size: 1em;
   font-weight: bold;
 }
-/* line 33, _src/styles/markdown.scss */
+/* line 34, _src/styles/markdown.scss */
 .md p, .md pre {
   margin: 1em 0;
 }
-/* line 37, _src/styles/markdown.scss */
+/* line 38, _src/styles/markdown.scss */
 .md code, .md pre {
   background-color: white;
   padding: 2px 5px;
@@ -382,57 +383,57 @@ pre, code {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 43, _src/styles/markdown.scss */
+/* line 44, _src/styles/markdown.scss */
 .md pre {
   border: 1px solid #b1c2c6;
   padding: 10px 20px;
   overflow: scroll;
   line-height: 1.5em;
 }
-/* line 50, _src/styles/markdown.scss */
+/* line 51, _src/styles/markdown.scss */
 .md pre code {
   border: none;
   background: none;
   padding: 0;
 }
-/* line 56, _src/styles/markdown.scss */
+/* line 57, _src/styles/markdown.scss */
 .md .highlight {
   background: none;
 }
-/* line 60, _src/styles/markdown.scss */
+/* line 61, _src/styles/markdown.scss */
 .md ul, .md ol {
   margin: 1em 0px;
   padding-left: 2em;
 }
-/* line 64, _src/styles/markdown.scss */
+/* line 65, _src/styles/markdown.scss */
 .md ul ul, .md ol ul {
   list-style: circle;
 }
-/* line 68, _src/styles/markdown.scss */
+/* line 69, _src/styles/markdown.scss */
 .md ul ol, .md ol ol {
   list-style: lower-latin;
 }
-/* line 73, _src/styles/markdown.scss */
+/* line 74, _src/styles/markdown.scss */
 .md ul {
   list-style: disc;
 }
-/* line 77, _src/styles/markdown.scss */
+/* line 78, _src/styles/markdown.scss */
 .md ol {
   list-style: decimal;
 }
-/* line 81, _src/styles/markdown.scss */
+/* line 82, _src/styles/markdown.scss */
 .md hr {
   border-top: 1px dashed #b1c2c6;
   border-left: none;
   border-bottom: none;
 }
-/* line 87, _src/styles/markdown.scss */
+/* line 88, _src/styles/markdown.scss */
 .md blockquote {
   color: #999999;
   padding: 0 0 0 30px;
   position: relative;
 }
-/* line 92, _src/styles/markdown.scss */
+/* line 93, _src/styles/markdown.scss */
 .md blockquote:before {
   font-family: FontAwesome;
   font-size: 1.5em;
@@ -442,7 +443,7 @@ pre, code {
   top: 0;
   left: 0;
 }
-/* line 103, _src/styles/markdown.scss */
+/* line 104, _src/styles/markdown.scss */
 .md strong {
   font-weight: bold;
 }
