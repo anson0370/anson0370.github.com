@@ -1,8 +1,7 @@
 @import "common";
 
 $post-padding: 40px;
-$post-border-color: darken($color-rule-2, 20%);
-$post-code-back: $color-rule-3;
+$post-code-back: $color-rule-2;
 
 .posts {
   > .post {
@@ -11,60 +10,34 @@ $post-code-back: $color-rule-3;
 }
 
 .post {
-  background-color: white;
-  border: 1px solid $post-border-color;
   border-bottom-width: 2px;
   z-index: 11;
-  @include border-radius(5px);
-
-  padding: 20px $post-padding;
 
   .post-title {
-    $start-color: lighten($color-rule-5, 5%);
-    $end-color: darken($color-rule-5, 5%);
-
-    position: relative;
-    width: 100%;
-    padding: 30px;
-    left: -55px;
-    background-color: $end-color;
-    @include background(linear-gradient($start-color, $end-color));
-    @include border-radius(0 5px 5px 0);
-    @include box-shadow(inset 0 1px rgba(white, 0.3), inset 0 -1px rgba(black, 0.3));
-
-    &:before {
-      content: "";
-      display: block;
-      position: absolute;
-      border-color: transparent $end-color $end-color transparent;
-      border-style: solid;
-      border-width: 4px 7px;
-      top: -8px;
-      left: 0;
-    }
+    display: block;
+    background-color: $color-rule-5;
+    @include border-radius(10px 10px 0 0);
+    padding: 0 $post-padding;
 
     > h2 {
       display: inline;
       color: $light-font-color;
       font-size: 30px;
+      line-height: 2.5em;
       font-weight: bold;
-      @include white-text-shadow;
-
-      > a {
-        color: $light-font-color;
-      }
     }
 
     > span {
       margin-left: 30px;
       color: $light-font-color;
       font-size: 16px;
-      @include white-text-shadow;
     }
   }
 
   .post-content {
-    margin-top: $post-padding;
+    background-color: white;
+    @include border-radius(0 0 10px 10px);
+    padding: 20px $post-padding;
   }
 }
 
@@ -76,9 +49,8 @@ $post-code-back: $color-rule-3;
 
   pre {
     width: 100%;
-    margin-left: -($post-padding + 1px);
-    padding: 20px $post-padding;
-    @include border-radius(0);
-    @include box-shadow(inset 0 1px rgba(white, 0.5));
+    margin-left: -($post-padding - 10px);
+    margin-right: -($post-padding - 10px);
+    padding: 20px $post-padding - 10px;
   }
 }

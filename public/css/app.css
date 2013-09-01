@@ -68,14 +68,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 9, _src/styles/global.scss */
 body {
   background-color: #ecf0f1;
-  color: #666666;
+  color: #34495e;
   font-size: 12px;
-  font-family: 'Arvo', 'Hiragino Sans GB', 微软雅黑, 黑体, sans-serif;
+  font-family: "Arvo", "Hiragino Sans GB", 微软雅黑, 黑体, sans-serif;
 }
 
 /* line 16, _src/styles/global.scss */
 a {
-  color: #4bb5c1;
+  color: #1abc9c;
   text-decoration: none;
   -webkit-transition: color, 0.2s;
   -moz-transition: color, 0.2s;
@@ -84,12 +84,12 @@ a {
 }
 /* line 22, _src/styles/global.scss */
 a:hover {
-  color: #3897a1;
+  color: #148f77;
 }
 
 /* line 27, _src/styles/global.scss */
 pre, code {
-  font-family: 'Source Code Pro', monospace, 'Courier New';
+  font-family: "Source Code Pro", monospace, "Courier New";
 }
 /* line 3, _src/styles/content.scss */
 .content-container {
@@ -113,7 +113,7 @@ pre, code {
 }
 /* line 11, _src/styles/footer.scss */
 .footer-container .powerd {
-  color: #999999;
+  color: #587ca0;
 }
 /* line 14, _src/styles/footer.scss */
 .footer-container .powerd-list {
@@ -121,7 +121,7 @@ pre, code {
 }
 /* line 17, _src/styles/footer.scss */
 .footer-container .powerd-list a {
-  color: #666666;
+  color: #34495e;
 }
 /* line 21, _src/styles/footer.scss */
 .footer-container .powerd-list > li {
@@ -131,7 +131,84 @@ pre, code {
 }
 /* line 26, _src/styles/footer.scss */
 .footer-container .powerd-list > li:not(:nth-last-child(1)) {
-  border-right: 1px solid #999999;
+  border-right: 1px solid #587ca0;
+}
+/* line 3, _src/styles/github-commits.scss */
+.github_commits, .md .github_commits {
+  width: 100%;
+}
+/* line 6, _src/styles/github-commits.scss */
+.github_commits > h3, .md .github_commits > h3 {
+  font-size: 1em;
+  margin: 0;
+  padding: 0 10px;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+  background-color: #1abc9c;
+  color: white;
+}
+/* line 15, _src/styles/github-commits.scss */
+.github_commits > ol, .md .github_commits > ol {
+  background-color: white;
+  margin: 0;
+  padding: 5px 10px;
+  list-style: none;
+  -webkit-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  -ms-border-radius: 0 0 10px 10px;
+  -o-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+}
+/* line 22, _src/styles/github-commits.scss */
+.github_commits > ol > li:not(:last-child), .md .github_commits > ol > li:not(:last-child) {
+  border-bottom: 2px dashed #ecf0f1;
+}
+/* line 26, _src/styles/github-commits.scss */
+.github_commits > ol > li, .md .github_commits > ol > li {
+  padding: 5px 0;
+  line-height: 35px;
+  position: relative;
+}
+/* line 33, _src/styles/github-commits.scss */
+.github_commits > ol > li .commit-author, .md .github_commits > ol > li .commit-author {
+  float: left;
+  display: block;
+  margin-right: 10px;
+  width: 35px;
+  height: 35px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 42, _src/styles/github-commits.scss */
+.github_commits > ol > li .commit-log, .md .github_commits > ol > li .commit-log {
+  margin: 0;
+}
+/* line 46, _src/styles/github-commits.scss */
+.github_commits > ol > li .commit-time, .md .github_commits > ol > li .commit-time {
+  color: #95a5a6;
+}
+/* line 50, _src/styles/github-commits.scss */
+.github_commits > ol > li .commit-sha, .md .github_commits > ol > li .commit-sha {
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+/* line 55, _src/styles/github-commits.scss */
+.github_commits > ol > li .commit-sha > a, .md .github_commits > ol > li .commit-sha > a {
+  font-family: "Source Code Pro", monospace, "Courier New";
+  background-color: #ecf0f1;
+  padding: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
 }
 /* line 6, _src/styles/header-float.scss */
 .header-container .site-control {
@@ -178,7 +255,7 @@ pre, code {
 }
 /* line 6, _src/styles/header.scss */
 .header {
-  background-color: #444444;
+  background-color: #2c3e50;
   width: 100%;
   position: absolute;
   z-index: 20;
@@ -250,7 +327,7 @@ pre, code {
 }
 /* line 65, _src/styles/header.scss */
 .header-container .site-menu > li > a:hover {
-  color: #444444;
+  color: #2c3e50;
 }
 /* line 68, _src/styles/header.scss */
 .header-container .site-menu > li > a:hover > b {
@@ -333,7 +410,7 @@ pre, code {
 }
 /* line 130, _src/styles/header.scss */
 .header-container .site-owner .owner-info a {
-  color: #666666;
+  color: #34495e;
 }
 /* line 133, _src/styles/header.scss */
 .header-container .site-owner .owner-info a:hover {
@@ -385,8 +462,8 @@ pre, code {
 }
 /* line 44, _src/styles/markdown.scss */
 .md pre {
-  border: 1px solid #b1c2c6;
   padding: 10px 20px;
+  margin: 0 1px;
   overflow: scroll;
   line-height: 1.5em;
 }
@@ -429,7 +506,7 @@ pre, code {
 }
 /* line 88, _src/styles/markdown.scss */
 .md blockquote {
-  color: #999999;
+  color: #95a5a6;
   padding: 0 0 0 30px;
   position: relative;
 }
@@ -457,97 +534,62 @@ pre, code {
   display: inline-block;
   padding: 0 5px;
 }
-/* line 8, _src/styles/post.scss */
+/* line 7, _src/styles/post.scss */
 .posts > .post {
   margin: 40px 0;
 }
 
-/* line 13, _src/styles/post.scss */
+/* line 12, _src/styles/post.scss */
 .post {
-  background-color: white;
-  border: 1px solid #b1c2c6;
   border-bottom-width: 2px;
   z-index: 11;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  padding: 20px 40px;
+}
+/* line 16, _src/styles/post.scss */
+.post .post-title {
+  display: block;
+  background-color: #1abc9c;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+  padding: 0 40px;
 }
 /* line 22, _src/styles/post.scss */
-.post .post-title {
-  position: relative;
-  width: 100%;
-  padding: 30px;
-  left: -55px;
-  background-color: #9ec653;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b4d279), color-stop(100%, #9ec653));
-  background: -webkit-linear-gradient(#b4d279, #9ec653);
-  background: -moz-linear-gradient(#b4d279, #9ec653);
-  background: -o-linear-gradient(#b4d279, #9ec653);
-  background: linear-gradient(#b4d279, #9ec653);
-  -webkit-border-radius: 0 5px 5px 0;
-  -moz-border-radius: 0 5px 5px 0;
-  -ms-border-radius: 0 5px 5px 0;
-  -o-border-radius: 0 5px 5px 0;
-  border-radius: 0 5px 5px 0;
-  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 -1px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 -1px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 -1px rgba(0, 0, 0, 0.3);
-}
-/* line 35, _src/styles/post.scss */
-.post .post-title:before {
-  content: "";
-  display: block;
-  position: absolute;
-  border-color: transparent #9ec653 #9ec653 transparent;
-  border-style: solid;
-  border-width: 4px 7px;
-  top: -8px;
-  left: 0;
-}
-/* line 46, _src/styles/post.scss */
 .post .post-title > h2 {
   display: inline;
   color: white;
   font-size: 30px;
+  line-height: 2.5em;
   font-weight: bold;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
 }
-/* line 53, _src/styles/post.scss */
-.post .post-title > h2 > a {
-  color: white;
-}
-/* line 58, _src/styles/post.scss */
+/* line 30, _src/styles/post.scss */
 .post .post-title > span {
   margin-left: 30px;
   color: white;
   font-size: 16px;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
 }
-/* line 66, _src/styles/post.scss */
+/* line 37, _src/styles/post.scss */
 .post .post-content {
-  margin-top: 40px;
+  background-color: white;
+  -webkit-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  -ms-border-radius: 0 0 10px 10px;
+  -o-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+  padding: 20px 40px;
 }
 
-/* line 73, _src/styles/post.scss */
+/* line 46, _src/styles/post.scss */
 .md.post-content code, .md.post-content pre {
   background-color: #ecf0f1;
 }
-/* line 77, _src/styles/post.scss */
+/* line 50, _src/styles/post.scss */
 .md.post-content pre {
   width: 100%;
-  margin-left: -41px;
-  padding: 20px 40px;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
-  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5);
-  -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5);
+  margin-left: -30px;
+  margin-right: -30px;
+  padding: 20px 30px;
 }
 /* line 6, _src/styles/s404.scss */
 .s404-container {
@@ -638,8 +680,8 @@ pre, code {
   top: 50%;
   left: 15%;
   line-height: 2.5em;
-  border-top: 4px solid #666666;
-  border-bottom: 4px solid #666666;
+  border-top: 4px solid #34495e;
+  border-bottom: 4px solid #34495e;
   background-color: #ecf0f1;
   -webkit-box-shadow: inset 0 1px white;
   -moz-box-shadow: inset 0 1px white;

@@ -42,8 +42,8 @@ $border-color: darken($color-rule-2, 20%);
   }
 
   pre {
-    border: 1px solid $border-color;
     padding: 10px 20px;
+    margin: 0 1px;
     overflow: scroll;
     line-height: 1.5em;
   }
@@ -86,7 +86,7 @@ $border-color: darken($color-rule-2, 20%);
   }
 
   blockquote {
-    color: lighten($font-color, 20%);
+    color: $gray-font-color;
     padding: 0 0 0 30px;
     position: relative;
 

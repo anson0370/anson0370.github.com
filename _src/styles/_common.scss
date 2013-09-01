@@ -13,13 +13,17 @@ $global-width: 1000px;
 // $color-rule-4: #E7E8D1;
 // $color-rule-5: #8E001C;
 
-$color-rule-1: #444;
+$color-rule-1: #2c3e50;
 $color-rule-2: #ecf0f1;
-$color-rule-3: #ecf0f1;
-$color-rule-4: #4BB5C1;
-$color-rule-5: #A9CC66;
+$color-rule-3: #95a5a6;
+$color-rule-4: #1abc9c;
+$color-rule-5: #1abc9c;
 // color rule
 
 $light-font-color: white;
+$font-color: #34495e;
+$gray-font-color: $color-rule-3;
 
-$font-color: #666;
+// fonts
+$normal-font: 'Arvo', 'Hiragino Sans GB', 微软雅黑, 黑体, sans-serif;
+$code-font: 'Source Code Pro', monospace, 'Courier New';

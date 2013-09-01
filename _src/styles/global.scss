@@ -10,7 +10,7 @@ body {
   background-color: $color-rule-2;
   color: $font-color;
   font-size: 12px;
-  font-family: 'Arvo', 'Hiragino Sans GB', 微软雅黑, 黑体, sans-serif;
+  font-family: $normal-font;
 }
 
 a {
@@ -25,5 +25,5 @@ a {
 }
 
 pre, code {
-  font-family: 'Source Code Pro', monospace, 'Courier New';
+  font-family: $code-font;
 }

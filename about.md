@@ -19,4 +19,10 @@ Powered by: Github, Jekyll, Linner, Font Awesome, Google Fonts, DISQUS
 
 All posts are © Anson, all rights reserved. The views expressed on this site are mine alone and not those of my employers and clients, past and present.
 
+## History
+
+<p class="js_github_commits" data-repo="anson0370/anson0370.github.com" data-limit="5" data-title="Blog commits">
+  Loading repo commits...
+</p>
+
 {% include disqus.html %}

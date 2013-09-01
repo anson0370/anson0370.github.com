@@ -1,0 +1,64 @@
+@import "common";
+
+.github_commits, .md .github_commits {
+  width: 100%;
+
+  > h3 {
+    font-size: 1em;
+    margin: 0;
+    padding: 0 10px;
+    @include border-radius(10px 10px 0 0);
+    background-color: $color-rule-5;
+    color: $light-font-color;
+  }
+
+  > ol {
+    background-color: white;
+    margin: 0;
+    padding: 5px 10px;
+    list-style: none;
+    @include border-radius(0 0 10px 10px);
+
+    > li:not(:last-child) {
+      border-bottom: 2px dashed $color-rule-2;
+    }
+
+    > li {
+      $padding: 5px;
+
+      padding: $padding 0;
+      line-height: 35px;
+      position: relative;
+
+      .commit-author {
+        float: left;
+        display: block;
+        margin-right: 10px;
+        width: 35px;
+        height: 35px;
+        @include border-radius(5px);
+      }
+
+      .commit-log {
+        margin: 0;
+      }
+
+      .commit-time {
+        color: $gray-font-color;
+      }
+
+      .commit-sha {
+        position: absolute;
+        top: $padding;
+        right: 0;
+
+        > a {
+          font-family: $code-font;
+          background-color: $color-rule-2;
+          padding: 5px;
+          @include border-radius(5px);
+        }
+      }
+    }
+  }
+}
