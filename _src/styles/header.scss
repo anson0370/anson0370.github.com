@@ -42,30 +42,33 @@ $header-height: 90px;
       > a {
         color: $light-font-color;
         display: block;
+        overflow: hidden;
         padding: 0 40px;
         height: $header-height;
         line-height: $header-height;
         position: relative;
         @include transition(color 0.2s ease);
 
-        > b {
+        > span {
+          position: relative;
+        }
+
+        &:before {
+          content: "";
           position: absolute;
           display: block;
           left: 0;
           bottom: 0;
           width: 100%;
+          height: 0;
           background-color: $color-rule-2;
           @include transition(height 0.2s ease);
-        }
-
-        > span {
-          position: relative;
         }
 
         &:hover {
           color: $header-back-color;
 
-          > b {
+          &:before {
             height: 100%;
           }
         }
