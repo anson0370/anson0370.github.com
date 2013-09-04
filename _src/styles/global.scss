@@ -17,7 +17,7 @@ a {
   color: $color-rule-4;
   text-decoration: none;
 
-  @include transition(color, 0.2s);
+  @include transition(color 0.2s);
 
   &:hover {
     color: darken($color-rule-4, 10%);
