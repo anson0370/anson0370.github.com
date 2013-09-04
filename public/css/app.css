@@ -67,15 +67,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 9, _src/styles/global.scss */
 body {
-  background-color: #ecf0f1;
-  color: #34495e;
+  background-color: #e6e9ed;
+  color: #434a54;
   font-size: 12px;
   font-family: "Arvo", "Hiragino Sans GB", 微软雅黑, 黑体, sans-serif;
 }
 
 /* line 16, _src/styles/global.scss */
 a {
-  color: #1abc9c;
+  color: #48cfad;
   text-decoration: none;
   -webkit-transition: color 0.2s;
   -moz-transition: color 0.2s;
@@ -84,7 +84,7 @@ a {
 }
 /* line 22, _src/styles/global.scss */
 a:hover {
-  color: #148f77;
+  color: #2fb593;
 }
 
 /* line 27, _src/styles/global.scss */
@@ -106,14 +106,14 @@ pre, code {
   margin: 0 auto;
   padding: 30px 0;
   text-align: center;
-  border-top: 1px solid #b1c2c6;
+  border-top: 1px solid #abb5c2;
   -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5);
   -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.5);
 }
 /* line 11, _src/styles/footer.scss */
 .footer-container .powerd {
-  color: #587ca0;
+  color: #707c8d;
 }
 /* line 14, _src/styles/footer.scss */
 .footer-container .powerd-list {
@@ -121,7 +121,7 @@ pre, code {
 }
 /* line 17, _src/styles/footer.scss */
 .footer-container .powerd-list a {
-  color: #34495e;
+  color: #434a54;
 }
 /* line 21, _src/styles/footer.scss */
 .footer-container .powerd-list > li {
@@ -131,7 +131,7 @@ pre, code {
 }
 /* line 26, _src/styles/footer.scss */
 .footer-container .powerd-list > li:not(:nth-last-child(1)) {
-  border-right: 1px solid #587ca0;
+  border-right: 1px solid #707c8d;
 }
 /* line 3, _src/styles/github-commits.scss */
 .github_commits, .md .github_commits {
@@ -147,7 +147,7 @@ pre, code {
   -ms-border-radius: 10px 10px 0 0;
   -o-border-radius: 10px 10px 0 0;
   border-radius: 10px 10px 0 0;
-  background-color: #1abc9c;
+  background-color: #48cfad;
   color: white;
 }
 /* line 15, _src/styles/github-commits.scss */
@@ -164,7 +164,7 @@ pre, code {
 }
 /* line 22, _src/styles/github-commits.scss */
 .github_commits > ol > li:not(:last-child), .md .github_commits > ol > li:not(:last-child) {
-  border-bottom: 2px dashed #ecf0f1;
+  border-bottom: 2px dashed #e6e9ed;
 }
 /* line 26, _src/styles/github-commits.scss */
 .github_commits > ol > li, .md .github_commits > ol > li {
@@ -191,7 +191,7 @@ pre, code {
 }
 /* line 46, _src/styles/github-commits.scss */
 .github_commits > ol > li .commit-time, .md .github_commits > ol > li .commit-time {
-  color: #95a5a6;
+  color: #aab2bd;
 }
 /* line 50, _src/styles/github-commits.scss */
 .github_commits > ol > li .commit-sha, .md .github_commits > ol > li .commit-sha {
@@ -202,7 +202,7 @@ pre, code {
 /* line 55, _src/styles/github-commits.scss */
 .github_commits > ol > li .commit-sha > a, .md .github_commits > ol > li .commit-sha > a {
   font-family: "Source Code Pro", monospace, "Courier New";
-  background-color: #ecf0f1;
+  background-color: #e6e9ed;
   padding: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -255,7 +255,7 @@ pre, code {
 }
 /* line 6, _src/styles/header.scss */
 .header {
-  background-color: #2c3e50;
+  background-color: #434a54;
   width: 100%;
   position: absolute;
   z-index: 20;
@@ -279,7 +279,7 @@ pre, code {
   height: 50px;
   line-height: 50px;
   bottom: -25px;
-  background-color: #ecf0f1;
+  background-color: #e6e9ed;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -324,8 +324,8 @@ pre, code {
   top: -100%;
   width: 100%;
   height: 100%;
-  background-color: #ecf0f1;
-  color: #34495e;
+  background-color: #e6e9ed;
+  color: #434a54;
   -webkit-transition: top 0.2s ease;
   -moz-transition: top 0.2s ease;
   -o-transition: top 0.2s ease;
@@ -354,8 +354,8 @@ pre, code {
   -ms-border-radius: 79px;
   -o-border-radius: 79px;
   border-radius: 79px;
-  background-color: #ecf0f1;
-  border: 4px solid #ecf0f1;
+  background-color: #e6e9ed;
+  border: 4px solid #e6e9ed;
   -webkit-transition: width 0.3s ease;
   -moz-transition: width 0.3s ease;
   -o-transition: width 0.3s ease;
@@ -416,7 +416,7 @@ pre, code {
 }
 /* line 138, _src/styles/header.scss */
 .header-container .site-owner .owner-info a {
-  color: #34495e;
+  color: #434a54;
 }
 /* line 141, _src/styles/header.scss */
 .header-container .site-owner .owner-info a:hover {
@@ -506,13 +506,13 @@ pre, code {
 }
 /* line 82, _src/styles/markdown.scss */
 .md hr {
-  border-top: 1px dashed #b1c2c6;
+  border-top: 1px dashed #abb5c2;
   border-left: none;
   border-bottom: none;
 }
 /* line 88, _src/styles/markdown.scss */
 .md blockquote {
-  color: #95a5a6;
+  color: #aab2bd;
   padding: 0 0 0 30px;
   position: relative;
 }
@@ -553,7 +553,7 @@ pre, code {
 /* line 16, _src/styles/post.scss */
 .post .post-title {
   display: block;
-  background-color: #1abc9c;
+  background-color: #48cfad;
   -webkit-border-radius: 10px 10px 0 0;
   -moz-border-radius: 10px 10px 0 0;
   -ms-border-radius: 10px 10px 0 0;
@@ -588,14 +588,14 @@ pre, code {
 
 /* line 46, _src/styles/post.scss */
 .md.post-content code, .md.post-content pre {
-  background-color: #ecf0f1;
+  background-color: #e6e9ed;
 }
 /* line 50, _src/styles/post.scss */
 .md.post-content pre {
   width: 100%;
-  margin-left: -30px;
-  margin-right: -30px;
-  padding: 20px 30px;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 20px 20px;
 }
 /* line 6, _src/styles/s404.scss */
 .s404-container {
@@ -686,9 +686,9 @@ pre, code {
   top: 50%;
   left: 15%;
   line-height: 2.5em;
-  border-top: 4px solid #34495e;
-  border-bottom: 4px solid #34495e;
-  background-color: #ecf0f1;
+  border-top: 4px solid #434a54;
+  border-bottom: 4px solid #434a54;
+  background-color: #e6e9ed;
   -webkit-box-shadow: inset 0 1px white;
   -moz-box-shadow: inset 0 1px white;
   box-shadow: inset 0 1px white;

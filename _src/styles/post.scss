@@ -49,8 +49,8 @@ $post-code-back: $color-rule-2;
 
   pre {
     width: 100%;
-    margin-left: -($post-padding - 10px);
-    margin-right: -($post-padding - 10px);
-    padding: 20px $post-padding - 10px;
+    margin-left: -($post-padding / 2);
+    margin-right: -($post-padding / 2);
+    padding: 20px ($post-padding / 2);
   }
 }
