@@ -11,7 +11,7 @@ categories: "stuff"
 
 ```css
 width: 200px; /* 指定宽度，否则内容可能将容器撑大 */
-white-space: nowrap; /* 指定不换行，否则内容可能自行换行容器宽度 */
+white-space: nowrap; /* 指定不换行，否则内容可能自行换行以适应容器宽度 */
 overflow: hidden; /* 保证溢出内容被隐藏 */
 text-overflow: ellipsis; /* 将多余内容转为 … */
 ```
