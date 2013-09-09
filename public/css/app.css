@@ -469,7 +469,7 @@ pre, code {
 /* line 44, _src/styles/markdown.scss */
 .md pre {
   padding: 10px 20px;
-  margin: 0 1px;
+  margin: 1.5em 1px;
   overflow: scroll;
   line-height: 1.5em;
 }
