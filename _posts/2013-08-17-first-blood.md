@@ -2,7 +2,6 @@
 layout: post
 title:  "First blood!"
 date:   2013-08-17 13:06:00
-categories: "stuff"
 ---
 
 The first post for my blog.

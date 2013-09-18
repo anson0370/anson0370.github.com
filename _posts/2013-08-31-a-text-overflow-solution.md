@@ -2,7 +2,6 @@
 layout: post
 title: A text overflow solution
 data: 2013-08-31 15:53:00
-categories: "stuff"
 ---
 
 我们经常会遇到一段过长的文字需要在有限长度的空间中展示的场景，通常情况下我们会选择把它截断并使用省略号（…）来表示这不是全部，这种方式的好处在于可以通过纯 CSS 简单的搞定。

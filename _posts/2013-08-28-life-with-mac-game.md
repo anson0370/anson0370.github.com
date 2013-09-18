@@ -2,7 +2,6 @@
 layout: post
 title: Life with Mac - Game
 data: 2013-08-28 13:21:00
-categories: "mac"
 ---
 
 继续 Mac 第三篇，直接讲游戏。虽然 Mac 上的游戏丰富程度和 Windows 是完全没法比，但是不少大作仍然能够顺利的玩到。

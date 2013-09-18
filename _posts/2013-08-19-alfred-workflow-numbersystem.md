@@ -2,7 +2,6 @@
 layout: post
 title: "An Alfred workflow for number system convert"
 data: 2013-08-19 14:03:00
-categories: "productivity"
 ---
 
 这是一个用于数制转换的 Alfred workflow，适用于 [Alfred v2](http://www.alfredapp.com/) 。如果你经常要打开计算器换算一下数制，这东西也许会适合你。

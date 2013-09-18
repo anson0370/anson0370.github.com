@@ -2,7 +2,6 @@
 layout: post
 title:  "Bootstrap my blog"
 date:   2013-08-18 13:41:00
-categories: "stuff"
 ---
 
 Restart blog again ！

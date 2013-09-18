@@ -2,7 +2,6 @@
 layout: post
 title: Life with Mac - Work
 data: 2013-08-20 17:52:00
-categories: "mac"
 ---
 
 最近身边不少朋友想买 Mac ，但又怕用不惯或者不够用，于是有了这几篇 post ，简单描述一下我如何在 Mac OSX 下工作、生活和娱乐。因为比较懒，所以分成三篇写吧，还能争取早日分页。本篇先写工作，如果有人因为我这几篇 post 而下定决心买了 Mac，Apple 也不会给我提成……
