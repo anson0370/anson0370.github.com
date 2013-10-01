@@ -1,7 +1,7 @@
 @import "common";
 
 $header-back-color: $color-rule-1;
-$header-height: 90px;
+$header-height: 120px;
 
 .header {
   background-color: $header-back-color;
@@ -18,93 +18,18 @@ $header-height: 90px;
   text-align: center;
   position: relative;
 
-  .site-title {
-    $title-height: 50px;
-
-    display: block;
-    position: absolute;
-    padding: 0 40px;
-    font-size: 26px;
-    height: $title-height;
-    line-height: $title-height;
-    bottom: -($title-height / 2);
-    background-color: $color-rule-2;
-    @include border-radius(5px);
-  }
-
-  .site-menu {
-    font-size: 0;
-
-    > li {
-      display: inline-block;
-      font-size: 16px;
-
-      > a {
-        color: $light-font-color;
-        display: block;
-        overflow: hidden;
-        padding: 0 40px;
-        height: $header-height;
-        line-height: $header-height;
-        position: relative;
-
-        > span {
-          position: relative;
-          @include transition(top 0.2s ease);
-        }
-
-        &:before {
-          content: attr(data-content);
-          font-family: FontAwesome;
-          font-size: 2em;
-          position: absolute;
-          display: block;
-          left: 0;
-          top: -100%;
-          width: 100%;
-          height: 100%;
-          background-color: $color-rule-2;
-          color: $font-color;
-          @include transition(top 0.2s ease);
-        }
-
-        &:hover {
-          > span {
-            top: 100%;
-          }
-
-          &:before {
-            top: 0;
-          }
-        }
-      }
-    }
-  }
-
   .site-owner {
-    $owner-size: 150px;
-    $owner-border-width: 4px;
+    $owner-size: 50px;
 
     display: block;
     position: absolute;
-    z-index: 12;
-    right: 0;
-    bottom: -($owner-size / 2 + $owner-border-width);
+    left: 0;
+    top: ($header-height - $owner-size) / 2;
     text-align: left;
     width: $owner-size;
     height: $owner-size;
-    @include border-radius($owner-size / 2 + $owner-border-width);
-    background-color: $color-rule-2;
-    border: $owner-border-width solid $color-rule-2;
+    @include border-radius(50%);
     @include transition(width 0.3s ease);
-
-    &:hover {
-      width: $owner-size * 2 - 20px;
-
-      .owner-info {
-        @include opacity(1);
-      }
-    }
 
     .owner-avatar {
       width: $owner-size;
@@ -126,22 +51,82 @@ $header-height: 90px;
         border: 1px solid rgba(white, 0.4);
       }
     }
+  }
 
-    .owner-info {
-      @include opacity(0);
-      @include transition(opacity 0.3s ease);
-      line-height: 25px;
-      text-align: right;
-      width: $owner-size - 30px;
-      margin-top: 15px;
+  .site-title {
+    $title-height: $header-height;
 
-      a {
-        color: $font-color;
+    display: block;
+    position: absolute;
+    font-size: 20px;
+    height: $title-height;
+    line-height: $title-height;
+    left: 60px;
+    top: 0;
+    color: white;
+    @include border-radius(5px);
+  }
+
+  .site-menu {
+    font-size: 0;
+
+    > li {
+      display: inline-block;
+      font-size: 16px;
+
+      > a {
+        color: $light-font-color;
+        display: block;
+        overflow: hidden;
+        padding: 0 40px;
+        height: $header-height;
+        line-height: $header-height;
+        position: relative;
+
+        > span {
+          position: relative;
+          color: transparent;
+          @include text-shadow(0 0 0 white);
+          @include transition(text-shadow 0.3s ease);
+        }
+
+        &:before {
+          content: attr(data-content);
+          font-family: FontAwesome;
+          font-size: 2em;
+          position: absolute;
+          display: block;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          @include transition(opacity 0.3s ease);
+        }
 
         &:hover {
-          color: black;
+          > span {
+            text-shadow: 0 0 20px white;
+          }
+
+          &:before {
+            opacity: 1;
+          }
         }
       }
+    }
+  }
+
+  .site-control {
+    position: absolute;
+    z-index: 12;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+    line-height: $header-height;
+
+    .control-rss {
+      color: white;
     }
   }
 }

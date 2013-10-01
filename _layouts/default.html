@@ -21,21 +21,14 @@
     <div class="header">
       <div class="header-container">
         <h1 class="site-title">{{ site.name }}</h1>
+        <div class="site-owner">
+          <a href="/about"><img src="/img/avatar.png" alt="" class="owner-avatar"><b></b></a>
+        </div>
         <ul class="site-menu">
           <li><a href="/" data-content="&#xf015;"><span><i class="icon-home icon-large"></i>&nbsp;HOME</span></a></li>
           <li><a href="https://github.com/{{ site.author.github }}" target="_blank" data-content="&#xf09b;"><span><i class="icon-github icon-large"></i>&nbsp;GITHUB</span></a></li>
           <li><a href="/about" data-content="&#xf118;"><span><i class="icon-smile icon-large"></i>&nbsp;ABOUT</span></a></li>
         </ul>
-        <div class="site-owner">
-          <ul class="owner-info">
-            <li class="owner-name">{{ site.author.fullname }}&nbsp;<i class="icon-user"></i></li>
-            <li class="owner-position">{{ site.author.position }}&nbsp;<i class="icon-map-marker"></i></li>
-            <li class="owner-weibo"><a href="{{ site.author.weibo.url }}" target="_blank">{{ site.author.weibo.name }}</a>&nbsp;<i class="icon-weibo"></i></li>
-            <li class="owner-twitter"><a href="{{ site.author.twitter.url }}" target="_blank">{{ site.author.twitter.name }}</a>&nbsp;<i class="icon-twitter"></i></li>
-            <li class="owner-rss"><a href="/atom.xml">Subscribe</a>&nbsp;<i class="icon-rss"></i></li>
-          </ul>
-          <a href="/about"><img src="/img/avatar.png" alt="" class="owner-avatar"><b></b></a>
-        </div>
         <div class="site-control">
           <a href="/atom.xml" class="control-rss"><i class="icon-rss"></i>&nbsp;Subscribe</a>
         </div>

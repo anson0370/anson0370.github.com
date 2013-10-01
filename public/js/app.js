@@ -59,10 +59,11 @@
   return this.require;
 }).call(this);window.require.define({"app":function(exports, require, module){(function() {
   $(function() {
-    var $header;
+    var $header, headerHeight;
     $header = $(".header");
+    headerHeight = $header.height();
     $(window).scroll(function() {
-      if ($(window).scrollTop() > ($header.height() / 2)) {
+      if ($(window).scrollTop() > headerHeight) {
         return $header.addClass("float");
       } else {
         return $header.removeClass("float");

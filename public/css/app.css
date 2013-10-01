@@ -94,7 +94,7 @@ pre, code {
 /* line 3, _src/styles/content.scss */
 .content-container {
   width: 1000px;
-  margin: 180px auto 90px;
+  margin: 170px auto 90px;
 }
 /* line 7, _src/styles/content.scss */
 .content-container .disqus-wrap {
@@ -210,48 +210,49 @@ pre, code {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 6, _src/styles/header-float.scss */
-.header-container .site-control {
-  display: none;
-  position: absolute;
-  z-index: 12;
-  right: 10px;
-  font-size: 14px;
-  line-height: 20px;
-  bottom: 10px;
-}
-/* line 15, _src/styles/header-float.scss */
-.header-container .site-control .control-rss {
-  color: white;
-}
-
-/* line 21, _src/styles/header-float.scss */
+/* line 5, _src/styles/header-float.scss */
 .header.float {
   position: fixed;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
   opacity: 0.85;
 }
-/* line 26, _src/styles/header-float.scss */
+/* line 10, _src/styles/header-float.scss */
 .header.float .header-container .site-title {
   left: 10px;
-  height: 30px;
-  line-height: 30px;
+  padding-left: 30px;
+  height: 50px;
+  line-height: 50px;
   font-size: 16px;
-  bottom: 5px;
 }
-/* line 36, _src/styles/header-float.scss */
-.header.float .header-container .site-menu > li > a {
-  height: 40px;
-  line-height: 40px;
-  font-size: 14px;
+/* line 18, _src/styles/header-float.scss */
+.header.float .header-container .site-title:before {
+  content: "";
+  display: block;
+  position: absolute;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  border: 2px solid white;
+  top: 15px;
+  left: 0;
 }
-/* line 43, _src/styles/header-float.scss */
+/* line 31, _src/styles/header-float.scss */
 .header.float .header-container .site-owner {
   display: none;
 }
-/* line 46, _src/styles/header-float.scss */
+/* line 36, _src/styles/header-float.scss */
+.header.float .header-container .site-menu > li > a {
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+}
+/* line 43, _src/styles/header-float.scss */
 .header.float .header-container .site-control {
-  display: block;
+  right: 10px;
+  line-height: 50px;
 }
 /* line 6, _src/styles/header.scss */
 .header {
@@ -271,109 +272,28 @@ pre, code {
   position: relative;
 }
 /* line 21, _src/styles/header.scss */
-.header-container .site-title {
-  display: block;
-  position: absolute;
-  padding: 0 40px;
-  font-size: 26px;
-  height: 50px;
-  line-height: 50px;
-  bottom: -25px;
-  background-color: #e6e9ed;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-}
-/* line 35, _src/styles/header.scss */
-.header-container .site-menu {
-  font-size: 0;
-}
-/* line 38, _src/styles/header.scss */
-.header-container .site-menu > li {
-  display: inline-block;
-  font-size: 16px;
-}
-/* line 42, _src/styles/header.scss */
-.header-container .site-menu > li > a {
-  color: white;
-  display: block;
-  overflow: hidden;
-  padding: 0 40px;
-  height: 90px;
-  line-height: 90px;
-  position: relative;
-}
-/* line 51, _src/styles/header.scss */
-.header-container .site-menu > li > a > span {
-  position: relative;
-  -webkit-transition: top 0.2s ease;
-  -moz-transition: top 0.2s ease;
-  -o-transition: top 0.2s ease;
-  transition: top 0.2s ease;
-}
-/* line 56, _src/styles/header.scss */
-.header-container .site-menu > li > a:before {
-  content: attr(data-content);
-  font-family: FontAwesome;
-  font-size: 2em;
-  position: absolute;
-  display: block;
-  left: 0;
-  top: -100%;
-  width: 100%;
-  height: 100%;
-  background-color: #e6e9ed;
-  color: #434a54;
-  -webkit-transition: top 0.2s ease;
-  -moz-transition: top 0.2s ease;
-  -o-transition: top 0.2s ease;
-  transition: top 0.2s ease;
-}
-/* line 72, _src/styles/header.scss */
-.header-container .site-menu > li > a:hover > span {
-  top: 100%;
-}
-/* line 76, _src/styles/header.scss */
-.header-container .site-menu > li > a:hover:before {
-  top: 0;
-}
-/* line 84, _src/styles/header.scss */
 .header-container .site-owner {
   display: block;
   position: absolute;
-  z-index: 12;
-  right: 0;
-  bottom: -79px;
+  left: 0;
+  top: 35px;
   text-align: left;
-  width: 150px;
-  height: 150px;
-  -webkit-border-radius: 79px;
-  -moz-border-radius: 79px;
-  -ms-border-radius: 79px;
-  -o-border-radius: 79px;
-  border-radius: 79px;
-  background-color: #e6e9ed;
-  border: 4px solid #e6e9ed;
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
   -webkit-transition: width 0.3s ease;
   -moz-transition: width 0.3s ease;
   -o-transition: width 0.3s ease;
   transition: width 0.3s ease;
 }
-/* line 101, _src/styles/header.scss */
-.header-container .site-owner:hover {
-  width: 280px;
-}
-/* line 104, _src/styles/header.scss */
-.header-container .site-owner:hover .owner-info {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
-}
-/* line 109, _src/styles/header.scss */
+/* line 34, _src/styles/header.scss */
 .header-container .site-owner .owner-avatar {
-  width: 150px;
-  height: 150px;
+  width: 50px;
+  height: 50px;
   position: absolute;
   top: 0;
   right: 0;
@@ -386,12 +306,12 @@ pre, code {
   -o-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 118, _src/styles/header.scss */
+/* line 43, _src/styles/header.scss */
 .header-container .site-owner .owner-avatar + b {
   display: block;
   position: absolute;
-  width: 148px;
-  height: 148px;
+  width: 48px;
+  height: 48px;
   top: 0;
   right: 0;
   -webkit-border-radius: 50%;
@@ -401,26 +321,88 @@ pre, code {
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
-/* line 130, _src/styles/header.scss */
-.header-container .site-owner .owner-info {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+/* line 56, _src/styles/header.scss */
+.header-container .site-title {
+  display: block;
+  position: absolute;
+  font-size: 20px;
+  height: 120px;
+  line-height: 120px;
+  left: 60px;
+  top: 0;
+  color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 70, _src/styles/header.scss */
+.header-container .site-menu {
+  font-size: 0;
+}
+/* line 73, _src/styles/header.scss */
+.header-container .site-menu > li {
+  display: inline-block;
+  font-size: 16px;
+}
+/* line 77, _src/styles/header.scss */
+.header-container .site-menu > li > a {
+  color: white;
+  display: block;
+  overflow: hidden;
+  padding: 0 40px;
+  height: 120px;
+  line-height: 120px;
+  position: relative;
+}
+/* line 86, _src/styles/header.scss */
+.header-container .site-menu > li > a > span {
+  position: relative;
+  color: transparent;
+  text-shadow: 0 0 0 white;
+  -webkit-transition: text-shadow 0.3s ease;
+  -moz-transition: text-shadow 0.3s ease;
+  -o-transition: text-shadow 0.3s ease;
+  transition: text-shadow 0.3s ease;
+}
+/* line 93, _src/styles/header.scss */
+.header-container .site-menu > li > a:before {
+  content: attr(data-content);
+  font-family: FontAwesome;
+  font-size: 2em;
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease;
   -moz-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-  line-height: 25px;
-  text-align: right;
-  width: 120px;
-  margin-top: 15px;
 }
-/* line 138, _src/styles/header.scss */
-.header-container .site-owner .owner-info a {
-  color: #434a54;
+/* line 108, _src/styles/header.scss */
+.header-container .site-menu > li > a:hover > span {
+  text-shadow: 0 0 20px white;
 }
-/* line 141, _src/styles/header.scss */
-.header-container .site-owner .owner-info a:hover {
-  color: black;
+/* line 112, _src/styles/header.scss */
+.header-container .site-menu > li > a:hover:before {
+  opacity: 1;
+}
+/* line 120, _src/styles/header.scss */
+.header-container .site-control {
+  position: absolute;
+  z-index: 12;
+  top: 0;
+  right: 0;
+  font-size: 14px;
+  line-height: 120px;
+}
+/* line 128, _src/styles/header.scss */
+.header-container .site-control .control-rss {
+  color: white;
 }
 /* line 5, _src/styles/markdown.scss */
 .md {

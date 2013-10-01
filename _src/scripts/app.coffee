@@ -1,8 +1,9 @@
 $ ->
   # fix header
   $header = $(".header")
+  headerHeight = $header.height()
   $(window).scroll ->
-    if $(window).scrollTop() > ($header.height() / 2)
+    if $(window).scrollTop() > headerHeight
       $header.addClass("float")
     else
       $header.removeClass("float")

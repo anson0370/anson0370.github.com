@@ -1,35 +1,35 @@
 @import "common";
 
-$header-height: 40px;
-
-.header-container {
-  .site-control {
-    display: none;
-    position: absolute;
-    z-index: 12;
-    right: 10px;
-    font-size: 14px;
-    line-height: 20px;
-    bottom: ($header-height - 20px) / 2;
-
-    .control-rss {
-      color: white;
-    }
-  }
-}
+$header-height: 50px;
 
 .header.float {
   position: fixed;
-  @include opacity(0.85);
+  opacity: 0.85;
 
   .header-container {
     .site-title {
-      $title-height: 30px;
+      $title-height: $header-height;
       left: 10px;
+      padding-left: 30px;
       height: $title-height;
       line-height: $title-height;
       font-size: 16px;
-      bottom: ($header-height - $title-height) / 2;
+
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        @include border-radius(50%);
+        height: 16px;
+        width: 16px;
+        border: 2px solid white;
+        top: ($header-height - 20px) / 2;
+        left: 0;
+      }
+    }
+
+    .site-owner {
+      display: none;
     }
 
     .site-menu {
@@ -40,11 +40,9 @@ $header-height: 40px;
       }
     }
 
-    .site-owner {
-      display: none;
-    }
     .site-control {
-      display: block;
+      right: 10px;
+      line-height: $header-height;
     }
   }
 }
