@@ -1,10 +1,17 @@
 @import "common";
 
+$header-back-color: $color-rule-1;
 $header-height: 50px;
 
-.header.float {
+.header-fixed {
+  background-color: $header-back-color;
+  width: 100%;
   position: fixed;
   opacity: 0.85;
+  top: -$header-height;
+  left: 0;
+  z-index: 20;
+  @include transition(top 0.3s ease);
 
   .header-container {
     .site-title {
@@ -44,5 +51,9 @@ $header-height: 50px;
       right: 10px;
       line-height: $header-height;
     }
+  }
+
+  &.show {
+    top: 0;
   }
 }

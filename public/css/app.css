@@ -210,21 +210,30 @@ pre, code {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 5, _src/styles/header-float.scss */
-.header.float {
+/* line 6, _src/styles/header-fixed.scss */
+.header-fixed {
+  background-color: #434a54;
+  width: 100%;
   position: fixed;
   opacity: 0.85;
+  top: -50px;
+  left: 0;
+  z-index: 20;
+  -webkit-transition: top 0.3s ease;
+  -moz-transition: top 0.3s ease;
+  -o-transition: top 0.3s ease;
+  transition: top 0.3s ease;
 }
-/* line 10, _src/styles/header-float.scss */
-.header.float .header-container .site-title {
+/* line 17, _src/styles/header-fixed.scss */
+.header-fixed .header-container .site-title {
   left: 10px;
   padding-left: 30px;
   height: 50px;
   line-height: 50px;
   font-size: 16px;
 }
-/* line 18, _src/styles/header-float.scss */
-.header.float .header-container .site-title:before {
+/* line 25, _src/styles/header-fixed.scss */
+.header-fixed .header-container .site-title:before {
   content: "";
   display: block;
   position: absolute;
@@ -239,20 +248,24 @@ pre, code {
   top: 15px;
   left: 0;
 }
-/* line 31, _src/styles/header-float.scss */
-.header.float .header-container .site-owner {
+/* line 38, _src/styles/header-fixed.scss */
+.header-fixed .header-container .site-owner {
   display: none;
 }
-/* line 36, _src/styles/header-float.scss */
-.header.float .header-container .site-menu > li > a {
+/* line 43, _src/styles/header-fixed.scss */
+.header-fixed .header-container .site-menu > li > a {
   height: 50px;
   line-height: 50px;
   font-size: 14px;
 }
-/* line 43, _src/styles/header-float.scss */
-.header.float .header-container .site-control {
+/* line 50, _src/styles/header-fixed.scss */
+.header-fixed .header-container .site-control {
   right: 10px;
   line-height: 50px;
+}
+/* line 56, _src/styles/header-fixed.scss */
+.header-fixed.show {
+  top: 0;
 }
 /* line 6, _src/styles/header.scss */
 .header {
@@ -262,16 +275,24 @@ pre, code {
   z-index: 20;
   top: 0;
   left: 0;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+/* line 15, _src/styles/header.scss */
+.header.hide {
+  opacity: 0;
 }
 
-/* line 15, _src/styles/header.scss */
+/* line 20, _src/styles/header.scss */
 .header-container {
   width: 1000px;
   margin: 0 auto;
   text-align: center;
   position: relative;
 }
-/* line 21, _src/styles/header.scss */
+/* line 26, _src/styles/header.scss */
 .header-container .site-owner {
   display: block;
   position: absolute;
@@ -290,7 +311,7 @@ pre, code {
   -o-transition: width 0.3s ease;
   transition: width 0.3s ease;
 }
-/* line 34, _src/styles/header.scss */
+/* line 39, _src/styles/header.scss */
 .header-container .site-owner .owner-avatar {
   width: 50px;
   height: 50px;
@@ -306,7 +327,7 @@ pre, code {
   -o-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 43, _src/styles/header.scss */
+/* line 48, _src/styles/header.scss */
 .header-container .site-owner .owner-avatar + b {
   display: block;
   position: absolute;
@@ -321,7 +342,7 @@ pre, code {
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
-/* line 56, _src/styles/header.scss */
+/* line 61, _src/styles/header.scss */
 .header-container .site-title {
   display: block;
   position: absolute;
@@ -337,16 +358,16 @@ pre, code {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 70, _src/styles/header.scss */
+/* line 75, _src/styles/header.scss */
 .header-container .site-menu {
   font-size: 0;
 }
-/* line 73, _src/styles/header.scss */
+/* line 78, _src/styles/header.scss */
 .header-container .site-menu > li {
   display: inline-block;
   font-size: 16px;
 }
-/* line 77, _src/styles/header.scss */
+/* line 82, _src/styles/header.scss */
 .header-container .site-menu > li > a {
   color: white;
   display: block;
@@ -356,7 +377,7 @@ pre, code {
   line-height: 120px;
   position: relative;
 }
-/* line 86, _src/styles/header.scss */
+/* line 91, _src/styles/header.scss */
 .header-container .site-menu > li > a > span {
   position: relative;
   color: transparent;
@@ -366,7 +387,7 @@ pre, code {
   -o-transition: text-shadow 0.3s ease;
   transition: text-shadow 0.3s ease;
 }
-/* line 93, _src/styles/header.scss */
+/* line 98, _src/styles/header.scss */
 .header-container .site-menu > li > a:before {
   content: attr(data-content);
   font-family: FontAwesome;
@@ -383,15 +404,15 @@ pre, code {
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
-/* line 108, _src/styles/header.scss */
+/* line 113, _src/styles/header.scss */
 .header-container .site-menu > li > a:hover > span {
   text-shadow: 0 0 20px white;
 }
-/* line 112, _src/styles/header.scss */
+/* line 117, _src/styles/header.scss */
 .header-container .site-menu > li > a:hover:before {
   opacity: 1;
 }
-/* line 120, _src/styles/header.scss */
+/* line 125, _src/styles/header.scss */
 .header-container .site-control {
   position: absolute;
   z-index: 12;
@@ -400,7 +421,7 @@ pre, code {
   font-size: 14px;
   line-height: 120px;
 }
-/* line 128, _src/styles/header.scss */
+/* line 133, _src/styles/header.scss */
 .header-container .site-control .control-rss {
   color: white;
 }

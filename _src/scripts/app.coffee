@@ -1,12 +1,15 @@
 $ ->
   # fix header
   $header = $(".header")
-  headerHeight = $header.height()
+  $headerFixed = $(".header-fixed")
+  triggerHeight = $header.height() - $headerFixed.height()
   $(window).scroll ->
-    if $(window).scrollTop() > headerHeight
-      $header.addClass("float")
+    if $(window).scrollTop() > triggerHeight
+      $header.addClass("hide")
+      $headerFixed.addClass("show")
     else
-      $header.removeClass("float")
+      $header.removeClass("hide")
+      $headerFixed.removeClass("show")
   # trigger scroll once
   $(window).scroll()
 

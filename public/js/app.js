@@ -59,14 +59,17 @@
   return this.require;
 }).call(this);window.require.define({"app":function(exports, require, module){(function() {
   $(function() {
-    var $header, headerHeight;
+    var $header, $headerFixed, triggerHeight;
     $header = $(".header");
-    headerHeight = $header.height();
+    $headerFixed = $(".header-fixed");
+    triggerHeight = $header.height() - $headerFixed.height();
     $(window).scroll(function() {
-      if ($(window).scrollTop() > headerHeight) {
-        return $header.addClass("float");
+      if ($(window).scrollTop() > triggerHeight) {
+        $header.addClass("hide");
+        return $headerFixed.addClass("show");
       } else {
-        return $header.removeClass("float");
+        $header.removeClass("hide");
+        return $headerFixed.removeClass("show");
       }
     });
     $(window).scroll();
