@@ -535,7 +535,7 @@ pre, code {
 }
 /* line 3, _src/styles/pagination.scss */
 #pagination {
-  font-size: 14px;
+  font-size: 1.5em;
   padding-left: 10px;
 }
 /* line 8, _src/styles/pagination.scss */
