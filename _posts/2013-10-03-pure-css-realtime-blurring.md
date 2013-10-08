@@ -4,7 +4,7 @@ title:  "Pure CSS realtime blurring"
 date:   2013-10-03 00:37:00
 ---
 
-使用纯 CSS 做到实时的部分毛玻璃遮罩（其实就是个高斯模糊）效果，在看 demo 之前，请使用最新版的 chrome 并到 `chrome//flags` 中搜索 `#enable-experimental-webkit-features` 打开并重启。
+使用纯 CSS 做到实时的部分毛玻璃遮罩（其实就是个高斯模糊）效果，在看 demo 之前，请使用最新版的 chrome 并到 `chrome//flags` 中搜索 `#enable-experimental-webkit-features` 打开并重启。（从 30.0 版本开始改为 `#enable-experimental-web-platform-features` 了）
 
 demo ：
 
