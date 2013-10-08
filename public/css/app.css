@@ -92,13 +92,33 @@ pre, code {
   font-family: "Source Code Pro", monospace, "Courier New";
 }
 /* line 3, _src/styles/content.scss */
+.content {
+  position: relative;
+  -webkit-animation: up-fade-in 0.5s ease-out 0.3s backwards;
+}
+
+/* line 8, _src/styles/content.scss */
 .content-container {
   width: 1000px;
-  margin: 170px auto 90px;
+  margin: 50px auto 90px;
 }
-/* line 7, _src/styles/content.scss */
+/* line 12, _src/styles/content.scss */
 .content-container .disqus-wrap {
   margin-top: 80px;
+}
+
+@-webkit-keyframes up-fade-in {
+  /* line 18, _src/styles/content.scss */
+  0% {
+    top: 30px;
+    opacity: 0;
+  }
+
+  /* line 22, _src/styles/content.scss */
+  100% {
+    top: 0;
+    opacity: 1;
+  }
 }
 /* line 3, _src/styles/footer.scss */
 .footer-container {
@@ -271,36 +291,34 @@ pre, code {
 .header {
   background-color: #434a54;
   width: 100%;
-  position: absolute;
-  z-index: 20;
-  top: 0;
-  left: 0;
+  position: relative;
   -webkit-transition: opacity 0.3s ease;
   -moz-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
+  -webkit-animation: down-fade-in 0.5s ease-out 0.3s backwards;
 }
-/* line 15, _src/styles/header.scss */
+/* line 12, _src/styles/header.scss */
 .header.hide {
   opacity: 0;
 }
 
-/* line 20, _src/styles/header.scss */
+/* line 19, _src/styles/header.scss */
 .header-container {
   width: 1000px;
   margin: 0 auto;
   text-align: center;
   position: relative;
 }
-/* line 26, _src/styles/header.scss */
+/* line 25, _src/styles/header.scss */
 .header-container .site-owner {
   display: block;
   position: absolute;
   left: 0;
-  top: 35px;
+  top: 0;
   text-align: left;
   width: 50px;
-  height: 50px;
+  height: 100%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -311,12 +329,12 @@ pre, code {
   -o-transition: width 0.3s ease;
   transition: width 0.3s ease;
 }
-/* line 39, _src/styles/header.scss */
+/* line 38, _src/styles/header.scss */
 .header-container .site-owner .owner-avatar {
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 0;
+  top: 35px;
   right: 0;
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
@@ -327,13 +345,13 @@ pre, code {
   -o-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 48, _src/styles/header.scss */
+/* line 47, _src/styles/header.scss */
 .header-container .site-owner .owner-avatar + b {
   display: block;
   position: absolute;
   width: 48px;
   height: 48px;
-  top: 0;
+  top: 35px;
   right: 0;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -342,7 +360,7 @@ pre, code {
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
-/* line 61, _src/styles/header.scss */
+/* line 60, _src/styles/header.scss */
 .header-container .site-title {
   display: block;
   position: absolute;
@@ -358,16 +376,16 @@ pre, code {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 75, _src/styles/header.scss */
+/* line 74, _src/styles/header.scss */
 .header-container .site-menu {
   font-size: 0;
 }
-/* line 78, _src/styles/header.scss */
+/* line 77, _src/styles/header.scss */
 .header-container .site-menu > li {
   display: inline-block;
   font-size: 16px;
 }
-/* line 82, _src/styles/header.scss */
+/* line 81, _src/styles/header.scss */
 .header-container .site-menu > li > a {
   color: white;
   display: block;
@@ -377,7 +395,7 @@ pre, code {
   line-height: 120px;
   position: relative;
 }
-/* line 91, _src/styles/header.scss */
+/* line 90, _src/styles/header.scss */
 .header-container .site-menu > li > a > span {
   position: relative;
   color: transparent;
@@ -387,7 +405,7 @@ pre, code {
   -o-transition: text-shadow 0.3s ease;
   transition: text-shadow 0.3s ease;
 }
-/* line 98, _src/styles/header.scss */
+/* line 97, _src/styles/header.scss */
 .header-container .site-menu > li > a:before {
   content: attr(data-content);
   font-family: FontAwesome;
@@ -404,15 +422,15 @@ pre, code {
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
-/* line 113, _src/styles/header.scss */
+/* line 112, _src/styles/header.scss */
 .header-container .site-menu > li > a:hover > span {
   text-shadow: 0 0 20px white;
 }
-/* line 117, _src/styles/header.scss */
+/* line 116, _src/styles/header.scss */
 .header-container .site-menu > li > a:hover:before {
   opacity: 1;
 }
-/* line 125, _src/styles/header.scss */
+/* line 124, _src/styles/header.scss */
 .header-container .site-control {
   position: absolute;
   z-index: 12;
@@ -421,9 +439,23 @@ pre, code {
   font-size: 14px;
   line-height: 120px;
 }
-/* line 133, _src/styles/header.scss */
+/* line 132, _src/styles/header.scss */
 .header-container .site-control .control-rss {
   color: white;
+}
+
+@-webkit-keyframes down-fade-in {
+  /* line 139, _src/styles/header.scss */
+  0% {
+    top: -30px;
+    opacity: 0;
+  }
+
+  /* line 143, _src/styles/header.scss */
+  100% {
+    top: 0;
+    opacity: 1;
+  }
 }
 /* line 5, _src/styles/markdown.scss */
 .md {
@@ -548,12 +580,7 @@ pre, code {
   margin: 40px 0;
 }
 
-/* line 12, _src/styles/post.scss */
-.post {
-  border-bottom-width: 2px;
-  z-index: 11;
-}
-/* line 16, _src/styles/post.scss */
+/* line 25, _src/styles/post.scss */
 .post .post-title {
   display: block;
   background-color: #48cfad;
@@ -563,8 +590,13 @@ pre, code {
   -o-border-radius: 10px 10px 0 0;
   border-radius: 10px 10px 0 0;
   padding: 0 40px;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
-/* line 22, _src/styles/post.scss */
+/* line 32, _src/styles/post.scss */
 .post .post-title > h2 {
   display: inline;
   color: white;
@@ -572,13 +604,13 @@ pre, code {
   line-height: 2.5em;
   font-weight: bold;
 }
-/* line 30, _src/styles/post.scss */
+/* line 40, _src/styles/post.scss */
 .post .post-title > span {
   margin-left: 30px;
   color: white;
   font-size: 16px;
 }
-/* line 37, _src/styles/post.scss */
+/* line 49, _src/styles/post.scss */
 .post .post-content {
   background-color: white;
   -webkit-border-radius: 0 0 10px 10px;
@@ -589,11 +621,11 @@ pre, code {
   padding: 20px 40px;
 }
 
-/* line 46, _src/styles/post.scss */
+/* line 58, _src/styles/post.scss */
 .md.post-content code, .md.post-content pre {
   background-color: #e6e9ed;
 }
-/* line 50, _src/styles/post.scss */
+/* line 62, _src/styles/post.scss */
 .md.post-content pre {
   width: 100%;
   margin-left: -20px;

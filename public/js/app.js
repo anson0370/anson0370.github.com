@@ -57,7 +57,7 @@
   }
 
   return this.require;
-}).call(this);window.require.define({"app":function(exports, require, module){(function() {
+}).call(this);this.require.define({"app":function(exports, require, module){(function() {
   $(function() {
     var $header, $headerFixed, triggerHeight;
     $header = $(".header");
@@ -79,7 +79,7 @@
 
 }).call(this);
 ;}});
-window.require.define({"github_commits":function(exports, require, module){(function() {
+this.require.define({"github_commits":function(exports, require, module){(function() {
   var defaultSettings, embedCommits;
 
   defaultSettings = {

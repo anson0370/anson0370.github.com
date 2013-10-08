@@ -1,10 +1,26 @@
 @import "common";
 
+.content {
+  position: relative;
+  -webkit-animation: up-fade-in 0.5s ease-out 0.3s backwards;
+}
+
 .content-container {
   width: $global-width;
-  margin: 170px auto 90px;
+  margin: 50px auto 90px;
 
   .disqus-wrap {
     margin-top: 80px;
+  }
+}
+
+@-webkit-keyframes up-fade-in {
+  0% {
+    top: 30px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
   }
 }

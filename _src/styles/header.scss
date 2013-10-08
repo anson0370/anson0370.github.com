@@ -6,15 +6,14 @@ $header-height: 120px;
 .header {
   background-color: $header-back-color;
   width: 100%;
-  position: absolute;
-  z-index: 20;
-  top: 0;
-  left: 0;
+  position: relative;
   @include transition(opacity 0.3s ease);
 
   &.hide {
     opacity: 0;
   }
+
+  -webkit-animation: down-fade-in 0.5s ease-out 0.3s backwards;
 }
 
 .header-container {
@@ -29,10 +28,10 @@ $header-height: 120px;
     display: block;
     position: absolute;
     left: 0;
-    top: ($header-height - $owner-size) / 2;
+    top: 0;
     text-align: left;
     width: $owner-size;
-    height: $owner-size;
+    height: 100%;
     @include border-radius(50%);
     @include transition(width 0.3s ease);
 
@@ -40,7 +39,7 @@ $header-height: 120px;
       width: $owner-size;
       height: $owner-size;
       position: absolute;
-      top: 0;
+      top: ($header-height - $owner-size) / 2;
       right: 0;
       @include box-shadow(0 0 3px rgba(black, 0.6));
       @include border-radius(50%);
@@ -50,7 +49,7 @@ $header-height: 120px;
         position: absolute;
         width: $owner-size - 2px;
         height: $owner-size - 2px;
-        top: 0;
+        top: ($header-height - $owner-size) / 2;
         right: 0;
         @include border-radius(50%);
         border: 1px solid rgba(white, 0.4);
@@ -133,5 +132,16 @@ $header-height: 120px;
     .control-rss {
       color: white;
     }
+  }
+}
+
+@-webkit-keyframes down-fade-in {
+  0% {
+    top: -30px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
   }
 }
