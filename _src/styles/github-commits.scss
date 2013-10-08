@@ -7,7 +7,7 @@
     font-size: 1em;
     margin: 0;
     padding: 0 10px;
-    @include border-radius(10px 10px 0 0);
+    @include border-radius(3px 3px 0 0);
     background-color: $color-rule-5;
     color: $light-font-color;
   }
@@ -17,7 +17,7 @@
     margin: 0;
     padding: 5px 10px;
     list-style: none;
-    @include border-radius(0 0 10px 10px);
+    @include border-radius(0 0 3px 3px);
 
     > li:not(:last-child) {
       border-bottom: 2px dashed $color-rule-2;
@@ -36,7 +36,7 @@
         margin-right: 10px;
         width: 35px;
         height: 35px;
-        @include border-radius(5px);
+        @include border-radius(3px);
       }
 
       .commit-log {
@@ -56,7 +56,7 @@
           font-family: $code-font;
           background-color: $color-rule-2;
           padding: 5px;
-          @include border-radius(5px);
+          @include border-radius(3px);
         }
       }
     }

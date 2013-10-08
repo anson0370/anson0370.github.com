@@ -162,11 +162,11 @@ pre, code {
   font-size: 1em;
   margin: 0;
   padding: 0 10px;
-  -webkit-border-radius: 10px 10px 0 0;
-  -moz-border-radius: 10px 10px 0 0;
-  -ms-border-radius: 10px 10px 0 0;
-  -o-border-radius: 10px 10px 0 0;
-  border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  -ms-border-radius: 3px 3px 0 0;
+  -o-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
   background-color: #48cfad;
   color: white;
 }
@@ -176,11 +176,11 @@ pre, code {
   margin: 0;
   padding: 5px 10px;
   list-style: none;
-  -webkit-border-radius: 0 0 10px 10px;
-  -moz-border-radius: 0 0 10px 10px;
-  -ms-border-radius: 0 0 10px 10px;
-  -o-border-radius: 0 0 10px 10px;
-  border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  -ms-border-radius: 0 0 3px 3px;
+  -o-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
 }
 /* line 22, _src/styles/github-commits.scss */
 .github_commits > ol > li:not(:last-child), .md .github_commits > ol > li:not(:last-child) {
@@ -199,11 +199,11 @@ pre, code {
   margin-right: 10px;
   width: 35px;
   height: 35px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
 }
 /* line 42, _src/styles/github-commits.scss */
 .github_commits > ol > li .commit-log, .md .github_commits > ol > li .commit-log {
@@ -224,11 +224,11 @@ pre, code {
   font-family: "Source Code Pro", monospace, "Courier New";
   background-color: #e6e9ed;
   padding: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
 }
 /* line 6, _src/styles/header-fixed.scss */
 .header-fixed {
@@ -495,11 +495,11 @@ pre, code {
 .md code, .md pre {
   background-color: white;
   padding: 2px 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
 }
 /* line 44, _src/styles/markdown.scss */
 .md pre {
@@ -580,52 +580,56 @@ pre, code {
   margin: 40px 0;
 }
 
-/* line 25, _src/styles/post.scss */
+/* line 13, _src/styles/post.scss */
 .post .post-title {
   display: block;
   background-color: #48cfad;
-  -webkit-border-radius: 10px 10px 0 0;
-  -moz-border-radius: 10px 10px 0 0;
-  -ms-border-radius: 10px 10px 0 0;
-  -o-border-radius: 10px 10px 0 0;
-  border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  -ms-border-radius: 3px 3px 0 0;
+  -o-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
   padding: 0 40px;
   overflow: hidden;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
-/* line 32, _src/styles/post.scss */
+/* line 20, _src/styles/post.scss */
 .post .post-title > h2 {
   display: inline;
   color: white;
   font-size: 30px;
   line-height: 2.5em;
   font-weight: bold;
+  -webkit-transition: text-shadow 0.3s ease;
+  -moz-transition: text-shadow 0.3s ease;
+  -o-transition: text-shadow 0.3s ease;
+  transition: text-shadow 0.3s ease;
 }
-/* line 40, _src/styles/post.scss */
+/* line 30, _src/styles/post.scss */
 .post .post-title > span {
   margin-left: 30px;
   color: white;
   font-size: 16px;
 }
-/* line 49, _src/styles/post.scss */
+/* line 38, _src/styles/post.scss */
+.post a.post-title:hover > h2 {
+  text-shadow: 0 0 5px;
+}
+/* line 43, _src/styles/post.scss */
 .post .post-content {
   background-color: white;
-  -webkit-border-radius: 0 0 10px 10px;
-  -moz-border-radius: 0 0 10px 10px;
-  -ms-border-radius: 0 0 10px 10px;
-  -o-border-radius: 0 0 10px 10px;
-  border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  -ms-border-radius: 0 0 3px 3px;
+  -o-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
   padding: 20px 40px;
 }
 
-/* line 58, _src/styles/post.scss */
+/* line 52, _src/styles/post.scss */
 .md.post-content code, .md.post-content pre {
   background-color: #e6e9ed;
 }
-/* line 62, _src/styles/post.scss */
+/* line 56, _src/styles/post.scss */
 .md.post-content pre {
   width: 100%;
   margin-left: -20px;

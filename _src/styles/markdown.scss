@@ -38,7 +38,7 @@ $border-color: darken($color-rule-2, 20%);
   code, pre {
     background-color: white;
     padding: 2px 5px;
-    @include border-radius(5px);
+    @include border-radius(3px);
   }
 
   pre {
