@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/css?family=Arvo);
+@import url(http://fonts.googleapis.com/css?family=Metrophobic);
 /* line 17, /Users/anson/.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -65,15 +65,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 9, _src/styles/global.scss */
+/* line 6, _src/styles/global.scss */
 body {
   background-color: #e6e9ed;
   color: #434a54;
   font-size: 12px;
-  font-family: "Arvo", "Hiragino Sans GB", "微软雅黑", "黑体", sans-serif;
+  font-family: "Metrophobic", "Hiragino Sans GB", "微软雅黑", "黑体", sans-serif;
 }
 
-/* line 16, _src/styles/global.scss */
+/* line 13, _src/styles/global.scss */
 a {
   color: #48cfad;
   text-decoration: none;
@@ -82,12 +82,12 @@ a {
   -o-transition: color 0.2s;
   transition: color 0.2s;
 }
-/* line 22, _src/styles/global.scss */
+/* line 19, _src/styles/global.scss */
 a:hover {
   color: #2fb593;
 }
 
-/* line 27, _src/styles/global.scss */
+/* line 24, _src/styles/global.scss */
 pre, code {
   font-family: "Source Code Pro", monospace, "Courier New";
 }
