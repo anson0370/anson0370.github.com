@@ -1,5 +1,7 @@
 name: "[ NOISES ]"
 markdown: redcarpet
+redcarpet:
+  extensions: ["tables", "strikethrough", "footnotes"]
 pygments: true
 exclude: ['Linnerfile']
 
