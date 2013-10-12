@@ -40,16 +40,13 @@ $header-height: 50px;
     }
 
     .site-menu {
+      margin-right: 10px;
+
       > li > a {
         height: $header-height;
         line-height: $header-height;
         font-size: 14px;
       }
-    }
-
-    .site-control {
-      right: 10px;
-      line-height: $header-height;
     }
   }
 

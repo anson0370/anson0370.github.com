@@ -19,7 +19,7 @@ $header-height: 120px;
 .header-container {
   width: $global-width;
   margin: 0 auto;
-  text-align: center;
+  text-align: right;
   position: relative;
 
   .site-owner {
@@ -68,7 +68,11 @@ $header-height: 120px;
     left: 60px;
     top: 0;
     color: white;
-    @include border-radius(5px);
+  }
+
+  .site-rss {
+    color: white;
+    font-size: 16px;
   }
 
   .site-menu {
@@ -81,11 +85,11 @@ $header-height: 120px;
       > a {
         color: $light-font-color;
         display: block;
-        overflow: hidden;
-        padding: 0 40px;
+        margin-left: 80px;
         height: $header-height;
         line-height: $header-height;
         position: relative;
+        text-align: center;
 
         > span {
           position: relative;
@@ -118,19 +122,6 @@ $header-height: 120px;
           }
         }
       }
-    }
-  }
-
-  .site-control {
-    position: absolute;
-    z-index: 12;
-    top: 0;
-    right: 0;
-    font-size: 14px;
-    line-height: $header-height;
-
-    .control-rss {
-      color: white;
     }
   }
 }

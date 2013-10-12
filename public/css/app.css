@@ -99,7 +99,7 @@ pre, code {
 
 /* line 8, _src/styles/content.scss */
 .content-container {
-  width: 1000px;
+  width: 1200px;
   margin: 50px auto 90px;
 }
 /* line 12, _src/styles/content.scss */
@@ -122,7 +122,7 @@ pre, code {
 }
 /* line 3, _src/styles/footer.scss */
 .footer-container {
-  width: 1000px;
+  width: 1200px;
   margin: 0 auto;
   padding: 30px 0;
   text-align: center;
@@ -272,18 +272,17 @@ pre, code {
 .header-fixed .header-container .site-owner {
   display: none;
 }
-/* line 43, _src/styles/header-fixed.scss */
+/* line 42, _src/styles/header-fixed.scss */
+.header-fixed .header-container .site-menu {
+  margin-right: 10px;
+}
+/* line 45, _src/styles/header-fixed.scss */
 .header-fixed .header-container .site-menu > li > a {
   height: 50px;
   line-height: 50px;
   font-size: 14px;
 }
-/* line 50, _src/styles/header-fixed.scss */
-.header-fixed .header-container .site-control {
-  right: 10px;
-  line-height: 50px;
-}
-/* line 56, _src/styles/header-fixed.scss */
+/* line 53, _src/styles/header-fixed.scss */
 .header-fixed.show {
   top: 0;
 }
@@ -305,9 +304,9 @@ pre, code {
 
 /* line 19, _src/styles/header.scss */
 .header-container {
-  width: 1000px;
+  width: 1200px;
   margin: 0 auto;
-  text-align: center;
+  text-align: right;
   position: relative;
 }
 /* line 25, _src/styles/header.scss */
@@ -370,32 +369,32 @@ pre, code {
   left: 60px;
   top: 0;
   color: white;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
 }
-/* line 74, _src/styles/header.scss */
+/* line 73, _src/styles/header.scss */
+.header-container .site-rss {
+  color: white;
+  font-size: 16px;
+}
+/* line 78, _src/styles/header.scss */
 .header-container .site-menu {
   font-size: 0;
 }
-/* line 77, _src/styles/header.scss */
+/* line 81, _src/styles/header.scss */
 .header-container .site-menu > li {
   display: inline-block;
   font-size: 16px;
 }
-/* line 81, _src/styles/header.scss */
+/* line 85, _src/styles/header.scss */
 .header-container .site-menu > li > a {
   color: white;
   display: block;
-  overflow: hidden;
-  padding: 0 40px;
+  margin-left: 80px;
   height: 120px;
   line-height: 120px;
   position: relative;
+  text-align: center;
 }
-/* line 90, _src/styles/header.scss */
+/* line 94, _src/styles/header.scss */
 .header-container .site-menu > li > a > span {
   position: relative;
   color: transparent;
@@ -405,7 +404,7 @@ pre, code {
   -o-transition: text-shadow 0.3s ease;
   transition: text-shadow 0.3s ease;
 }
-/* line 97, _src/styles/header.scss */
+/* line 101, _src/styles/header.scss */
 .header-container .site-menu > li > a:before {
   content: attr(data-content);
   font-family: FontAwesome;
@@ -422,36 +421,23 @@ pre, code {
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
-/* line 112, _src/styles/header.scss */
+/* line 116, _src/styles/header.scss */
 .header-container .site-menu > li > a:hover > span {
   text-shadow: 0 0 20px white;
 }
-/* line 116, _src/styles/header.scss */
+/* line 120, _src/styles/header.scss */
 .header-container .site-menu > li > a:hover:before {
   opacity: 1;
 }
-/* line 124, _src/styles/header.scss */
-.header-container .site-control {
-  position: absolute;
-  z-index: 12;
-  top: 0;
-  right: 0;
-  font-size: 14px;
-  line-height: 120px;
-}
-/* line 132, _src/styles/header.scss */
-.header-container .site-control .control-rss {
-  color: white;
-}
 
 @-webkit-keyframes down-fade-in {
-  /* line 139, _src/styles/header.scss */
+  /* line 130, _src/styles/header.scss */
   0% {
     top: -30px;
     opacity: 0;
   }
 
-  /* line 143, _src/styles/header.scss */
+  /* line 134, _src/styles/header.scss */
   100% {
     top: 0;
     opacity: 1;
@@ -707,7 +693,7 @@ pre, code {
 
 /* line 58, _src/styles/s404.scss */
 .s404-content {
-  width: 688px;
+  width: 888px;
   display: inline-block;
   vertical-align: middle;
   position: relative;
