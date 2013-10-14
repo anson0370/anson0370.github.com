@@ -247,7 +247,7 @@ pre, code {
 /* line 17, _src/styles/header-fixed.scss */
 .header-fixed .header-container .site-title {
   left: 10px;
-  padding-left: 30px;
+  padding-left: 20px;
   height: 50px;
   line-height: 50px;
   font-size: 16px;
@@ -262,10 +262,10 @@ pre, code {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  height: 16px;
-  width: 16px;
+  height: 10px;
+  width: 10px;
   border: 2px solid white;
-  top: 15px;
+  top: 18px;
   left: 0;
 }
 /* line 38, _src/styles/header-fixed.scss */
@@ -289,7 +289,6 @@ pre, code {
 /* line 6, _src/styles/header.scss */
 .header {
   background-color: #434a54;
-  width: 100%;
   position: relative;
   -webkit-transition: opacity 0.3s ease;
   -moz-transition: opacity 0.3s ease;
@@ -297,38 +296,28 @@ pre, code {
   transition: opacity 0.3s ease;
   -webkit-animation: down-fade-in 0.5s ease-out 0.3s backwards;
 }
-/* line 12, _src/styles/header.scss */
+/* line 11, _src/styles/header.scss */
 .header.hide {
   opacity: 0;
 }
 
-/* line 19, _src/styles/header.scss */
+/* line 18, _src/styles/header.scss */
 .header-container {
   width: 1200px;
   margin: 0 auto;
   text-align: right;
   position: relative;
 }
-/* line 25, _src/styles/header.scss */
+/* line 24, _src/styles/header.scss */
 .header-container .site-owner {
   display: block;
   position: absolute;
   left: 0;
   top: 0;
-  text-align: left;
   width: 50px;
   height: 100%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  -webkit-transition: width 0.3s ease;
-  -moz-transition: width 0.3s ease;
-  -o-transition: width 0.3s ease;
-  transition: width 0.3s ease;
 }
-/* line 38, _src/styles/header.scss */
+/* line 34, _src/styles/header.scss */
 .header-container .site-owner .owner-avatar {
   width: 50px;
   height: 50px;
@@ -344,7 +333,7 @@ pre, code {
   -o-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 47, _src/styles/header.scss */
+/* line 43, _src/styles/header.scss */
 .header-container .site-owner .owner-avatar + b {
   display: block;
   position: absolute;
@@ -359,7 +348,7 @@ pre, code {
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
-/* line 60, _src/styles/header.scss */
+/* line 56, _src/styles/header.scss */
 .header-container .site-title {
   display: block;
   position: absolute;
@@ -370,21 +359,21 @@ pre, code {
   top: 0;
   color: white;
 }
-/* line 73, _src/styles/header.scss */
+/* line 69, _src/styles/header.scss */
 .header-container .site-rss {
   color: white;
   font-size: 16px;
 }
-/* line 78, _src/styles/header.scss */
+/* line 74, _src/styles/header.scss */
 .header-container .site-menu {
   font-size: 0;
 }
-/* line 81, _src/styles/header.scss */
+/* line 77, _src/styles/header.scss */
 .header-container .site-menu > li {
   display: inline-block;
   font-size: 16px;
 }
-/* line 85, _src/styles/header.scss */
+/* line 81, _src/styles/header.scss */
 .header-container .site-menu > li > a {
   color: white;
   display: block;
@@ -394,7 +383,7 @@ pre, code {
   position: relative;
   text-align: center;
 }
-/* line 94, _src/styles/header.scss */
+/* line 90, _src/styles/header.scss */
 .header-container .site-menu > li > a > span {
   position: relative;
   color: transparent;
@@ -404,7 +393,7 @@ pre, code {
   -o-transition: text-shadow 0.3s ease;
   transition: text-shadow 0.3s ease;
 }
-/* line 101, _src/styles/header.scss */
+/* line 97, _src/styles/header.scss */
 .header-container .site-menu > li > a:before {
   content: attr(data-content);
   font-family: FontAwesome;
@@ -416,28 +405,30 @@ pre, code {
   width: 100%;
   height: 100%;
   opacity: 0;
-  -webkit-transition: opacity 0.3s ease;
-  -moz-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+  text-shadow: 0 0 20px white;
+  -webkit-transition: opacity 0.3s ease, text-shadow 0.3s ease;
+  -moz-transition: opacity 0.3s ease, text-shadow 0.3s ease;
+  -o-transition: opacity 0.3s ease, text-shadow 0.3s ease;
+  transition: opacity 0.3s ease, text-shadow 0.3s ease;
 }
-/* line 116, _src/styles/header.scss */
+/* line 113, _src/styles/header.scss */
 .header-container .site-menu > li > a:hover > span {
   text-shadow: 0 0 20px white;
 }
-/* line 120, _src/styles/header.scss */
+/* line 117, _src/styles/header.scss */
 .header-container .site-menu > li > a:hover:before {
   opacity: 1;
+  text-shadow: 0 0 0 white;
 }
 
 @-webkit-keyframes down-fade-in {
-  /* line 130, _src/styles/header.scss */
+  /* line 128, _src/styles/header.scss */
   0% {
     top: -30px;
     opacity: 0;
   }
 
-  /* line 134, _src/styles/header.scss */
+  /* line 132, _src/styles/header.scss */
   100% {
     top: 0;
     opacity: 1;
