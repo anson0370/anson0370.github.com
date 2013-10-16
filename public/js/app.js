@@ -73,20 +73,23 @@
       }
     });
     $(window).scroll();
-    require("github_commits").embedCommits($(".js_github_commits"));
+    require("github").embedCommits($(".js-github-commits"));
+    require("github").embedUser($(".js-github-user"));
     return console.log("%cWelcome%chttp://anson.so/etc/jd", "line-height: 30px; border-radius: 5px 0 0 5px; background-color: #666; color: white; padding: 6px;", "border-radius: 0 5px 5px 0; border: 1px solid #666; color: #666; padding: 5px;");
   });
 
 }).call(this);
 ;}});
-this.require.define({"github_commits":function(exports, require, module){(function() {
-  var defaultSettings, embedCommits;
+this.require.define({"github":function(exports, require, module){(function() {
+  var defaultSettings, defaultUser, embedCommits, embedUser;
 
   defaultSettings = {
     repo: "anson0370/anson0370.github.com",
     limit: 5,
     title: "Blog commits"
   };
+
+  defaultUser = "anson0370";
 
   embedCommits = function($selector) {
     return $selector.each(function() {
@@ -102,7 +105,7 @@ this.require.define({"github_commits":function(exports, require, module){(functi
         url: "https://api.github.com/repos/" + settings.repo + "/commits?per_page=" + settings.limit,
         success: function(data) {
           var html;
-          html = "<div class=\"github_commits\"><h3>" + settings.title + "</h3><ol>";
+          html = "<div class=\"github-commits\"><h3>" + settings.title + "</h3><ol>";
           $.each(data, function() {
             return html += "<li>\n  <img class=\"commit-author\" src=\"" + this.author.avatar_url + "\" alt=\"avatar\">\n  <p class=\"commit-log\">" + this.commit.message + " <span class=\"commit-time\">- " + (new Date(this.commit.committer.date).toLocaleDateString("en-US")) + "</span></p>\n  <span class=\"commit-sha\"><a href=\"" + this.html_url + "\" target=\"_blank\">" + this.sha.slice(0, 10) + "&nbsp;<i class=\"icon-chevron-sign-right\"></i></a></span>\n</li>";
           });
@@ -113,8 +116,26 @@ this.require.define({"github_commits":function(exports, require, module){(functi
     });
   };
 
+  embedUser = function($selector) {
+    return $selector.each(function() {
+      var $target, user;
+      $target = $(this);
+      user = $target.data("user") || defaultUser;
+      return $.ajax({
+        type: "GET",
+        url: "https://api.github.com/users/" + user,
+        success: function(data) {
+          var html;
+          html = "<div class=\"github-user\">\n  <div class=\"user-name\">Name: " + data.name + "</div>\n  <div class=\"user-location\">Location: " + data.location + "</div>\n  <ul class=\"user-infos\">\n    <li class=\"user-repos\">Repos: " + data.public_repos + "</li>\n    <li class=\"user-gists\">Gists: " + data.public_gists + "</li>\n    <li class=\"user-followers\">Followers: " + data.followers + "</li>\n  </ul>\n</div>";
+          return $target.html(html);
+        }
+      });
+    });
+  };
+
   module.exports = {
-    embedCommits: embedCommits
+    embedCommits: embedCommits,
+    embedUser: embedUser
   };
 
 }).call(this);

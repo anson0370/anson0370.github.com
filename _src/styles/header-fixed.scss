@@ -7,7 +7,7 @@ $header-height: 50px;
   background-color: $header-back-color;
   width: 100%;
   position: fixed;
-  opacity: 0.85;
+  opacity: 0.95;
   top: -$header-height;
   left: 0;
   z-index: 20;
@@ -42,10 +42,15 @@ $header-height: 50px;
     .site-menu {
       margin-right: 10px;
 
-      > li > a {
-        height: $header-height;
-        line-height: $header-height;
-        font-size: 14px;
+      > li {
+        > a {
+          height: $header-height;
+          line-height: $header-height;
+          font-size: 14px;
+        }
+        > .menu-tip {
+          margin-top: $header-height + 10px;
+        }
       }
     }
   }

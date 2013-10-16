@@ -1,6 +1,41 @@
 @import "common";
 
-.github_commits, .md .github_commits {
+.menu-tip.github-user-container {
+  $width: 200px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: -($width / 2 + 20px);
+
+  > .github-user {
+    font-size: 12px;
+    width: $width;
+    text-align: left;
+
+    .user-infos {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid white;
+      font-size: 0;
+
+      > li {
+        font-size: 12px;
+        display: inline-block;
+        padding: 0 5px;
+
+        &:not(:nth-last-child(1)) {
+          border-right: 1px solid white;
+        }
+
+        &:first-child {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
+.github-commits, .md .github-commits {
   width: 100%;
 
   > h3 {

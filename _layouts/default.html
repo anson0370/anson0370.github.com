@@ -26,7 +26,12 @@
         </div>
         <ul class="site-menu">
           <li><a href="/" data-content="&#xf015;"><span><i class="icon-home icon-large"></i>&nbsp;HOME</span></a></li>
-          <li><a href="https://github.com/{{ site.author.github }}" target="_blank" data-content="&#xf09b;"><span><i class="icon-github icon-large"></i>&nbsp;GITHUB</span></a></li>
+          <li>
+            <a href="https://github.com/{{ site.author.github }}" target="_blank" data-content="&#xf09b;"><span><i class="icon-github icon-large"></i>&nbsp;GITHUB</span></a>
+            <div class="menu-tip js-github-user github-user-container" data-user="{{ site.author.github }}">
+              Loading...
+            </div>
+          </li>
           <li><a href="/about" data-content="&#xf118;"><span><i class="icon-smile icon-large"></i>&nbsp;ABOUT</span></a></li>
         </ul>
       </div>
@@ -36,7 +41,12 @@
         <h1 class="site-title">{{ site.name }}&nbsp;<a href="/atom.xml" class="site-rss"><i class="icon-rss"></i></a></h1>
         <ul class="site-menu">
           <li><a href="/" data-content="&#xf015;"><span><i class="icon-home icon-large"></i>&nbsp;HOME</span></a></li>
-          <li><a href="https://github.com/{{ site.author.github }}" target="_blank" data-content="&#xf09b;"><span><i class="icon-github icon-large"></i>&nbsp;GITHUB</span></a></li>
+          <li>
+            <a href="https://github.com/{{ site.author.github }}" target="_blank" data-content="&#xf09b;"><span><i class="icon-github icon-large"></i>&nbsp;GITHUB</span></a>
+            <div class="menu-tip js-github-user github-user-container" data-user="{{ site.author.github }}">
+              Loading...
+            </div>
+          </li>
           <li><a href="/about" data-content="&#xf118;"><span><i class="icon-smile icon-large"></i>&nbsp;ABOUT</span></a></li>
         </ul>
       </div>

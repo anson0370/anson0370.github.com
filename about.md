@@ -21,7 +21,7 @@ All posts are © Anson, all rights reserved. The views expressed on this site ar
 
 ## History
 
-<p class="js_github_commits" data-repo="anson0370/anson0370.github.com" data-limit="5" data-title="Blog commits">
+<p class="js-github-commits" data-repo="anson0370/anson0370.github.com" data-limit="5" data-title="Blog commits">
   Loading repo commits...
 </p>
 

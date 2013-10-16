@@ -2,6 +2,7 @@ defaultSettings =
   repo: "anson0370/anson0370.github.com"
   limit: 5
   title: "Blog commits"
+defaultUser = "anson0370"
 
 embedCommits = ($selector) ->
   $selector.each ->
@@ -16,7 +17,7 @@ embedCommits = ($selector) ->
       type: "GET"
       url: "https://api.github.com/repos/#{settings.repo}/commits?per_page=#{settings.limit}"
       success: (data) ->
-        html = "<div class=\"github_commits\"><h3>#{settings.title}</h3><ol>"
+        html = "<div class=\"github-commits\"><h3>#{settings.title}</h3><ol>"
         $.each data, ->
           html += """
             <li>
@@ -27,5 +28,27 @@ embedCommits = ($selector) ->
         html += "</ol></div>"
         $target.html(html)
 
+embedUser = ($selector) ->
+  $selector.each ->
+    $target = $(@)
+    user = $target.data("user") or defaultUser
+    $.ajax
+      type: "GET"
+      url: "https://api.github.com/users/#{user}"
+      success: (data) ->
+        html = """
+          <div class="github-user">
+            <div class="user-name">Name: #{data.name}</div>
+            <div class="user-location">Location: #{data.location}</div>
+            <ul class="user-infos">
+              <li class="user-repos">Repos: #{data.public_repos}</li>
+              <li class="user-gists">Gists: #{data.public_gists}</li>
+              <li class="user-followers">Followers: #{data.followers}</li>
+            </ul>
+          </div>
+        """
+        $target.html(html)
+
 module.exports =
   embedCommits: embedCommits
+  embedUser: embedUser

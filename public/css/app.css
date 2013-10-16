@@ -153,12 +153,46 @@ pre, code {
 .footer-container .powerd-list > li:not(:nth-last-child(1)) {
   border-right: 1px solid #707c8d;
 }
-/* line 3, _src/styles/github-commits.scss */
-.github_commits, .md .github_commits {
+/* line 3, _src/styles/github.scss */
+.menu-tip.github-user-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: -120px;
+}
+/* line 10, _src/styles/github.scss */
+.menu-tip.github-user-container > .github-user {
+  font-size: 12px;
+  width: 200px;
+  text-align: left;
+}
+/* line 15, _src/styles/github.scss */
+.menu-tip.github-user-container > .github-user .user-infos {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid white;
+  font-size: 0;
+}
+/* line 21, _src/styles/github.scss */
+.menu-tip.github-user-container > .github-user .user-infos > li {
+  font-size: 12px;
+  display: inline-block;
+  padding: 0 5px;
+}
+/* line 26, _src/styles/github.scss */
+.menu-tip.github-user-container > .github-user .user-infos > li:not(:nth-last-child(1)) {
+  border-right: 1px solid white;
+}
+/* line 30, _src/styles/github.scss */
+.menu-tip.github-user-container > .github-user .user-infos > li:first-child {
+  padding-left: 0;
+}
+
+/* line 38, _src/styles/github.scss */
+.github-commits, .md .github-commits {
   width: 100%;
 }
-/* line 6, _src/styles/github-commits.scss */
-.github_commits > h3, .md .github_commits > h3 {
+/* line 41, _src/styles/github.scss */
+.github-commits > h3, .md .github-commits > h3 {
   font-size: 1em;
   margin: 0;
   padding: 0 10px;
@@ -170,8 +204,8 @@ pre, code {
   background-color: #48cfad;
   color: white;
 }
-/* line 15, _src/styles/github-commits.scss */
-.github_commits > ol, .md .github_commits > ol {
+/* line 50, _src/styles/github.scss */
+.github-commits > ol, .md .github-commits > ol {
   background-color: white;
   margin: 0;
   padding: 5px 10px;
@@ -182,18 +216,18 @@ pre, code {
   -o-border-radius: 0 0 3px 3px;
   border-radius: 0 0 3px 3px;
 }
-/* line 22, _src/styles/github-commits.scss */
-.github_commits > ol > li:not(:last-child), .md .github_commits > ol > li:not(:last-child) {
+/* line 57, _src/styles/github.scss */
+.github-commits > ol > li:not(:last-child), .md .github-commits > ol > li:not(:last-child) {
   border-bottom: 2px dashed #e6e9ed;
 }
-/* line 26, _src/styles/github-commits.scss */
-.github_commits > ol > li, .md .github_commits > ol > li {
+/* line 61, _src/styles/github.scss */
+.github-commits > ol > li, .md .github-commits > ol > li {
   padding: 5px 0;
   line-height: 35px;
   position: relative;
 }
-/* line 33, _src/styles/github-commits.scss */
-.github_commits > ol > li .commit-author, .md .github_commits > ol > li .commit-author {
+/* line 68, _src/styles/github.scss */
+.github-commits > ol > li .commit-author, .md .github-commits > ol > li .commit-author {
   float: left;
   display: block;
   margin-right: 10px;
@@ -205,22 +239,22 @@ pre, code {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 42, _src/styles/github-commits.scss */
-.github_commits > ol > li .commit-log, .md .github_commits > ol > li .commit-log {
+/* line 77, _src/styles/github.scss */
+.github-commits > ol > li .commit-log, .md .github-commits > ol > li .commit-log {
   margin: 0;
 }
-/* line 46, _src/styles/github-commits.scss */
-.github_commits > ol > li .commit-time, .md .github_commits > ol > li .commit-time {
+/* line 81, _src/styles/github.scss */
+.github-commits > ol > li .commit-time, .md .github-commits > ol > li .commit-time {
   color: #aab2bd;
 }
-/* line 50, _src/styles/github-commits.scss */
-.github_commits > ol > li .commit-sha, .md .github_commits > ol > li .commit-sha {
+/* line 85, _src/styles/github.scss */
+.github-commits > ol > li .commit-sha, .md .github-commits > ol > li .commit-sha {
   position: absolute;
   top: 5px;
   right: 0;
 }
-/* line 55, _src/styles/github-commits.scss */
-.github_commits > ol > li .commit-sha > a, .md .github_commits > ol > li .commit-sha > a {
+/* line 90, _src/styles/github.scss */
+.github-commits > ol > li .commit-sha > a, .md .github-commits > ol > li .commit-sha > a {
   font-family: "Source Code Pro", monospace, "Courier New";
   background-color: #e6e9ed;
   padding: 5px;
@@ -235,7 +269,7 @@ pre, code {
   background-color: #434a54;
   width: 100%;
   position: fixed;
-  opacity: 0.85;
+  opacity: 0.95;
   top: -50px;
   left: 0;
   z-index: 20;
@@ -276,13 +310,17 @@ pre, code {
 .header-fixed .header-container .site-menu {
   margin-right: 10px;
 }
-/* line 45, _src/styles/header-fixed.scss */
+/* line 46, _src/styles/header-fixed.scss */
 .header-fixed .header-container .site-menu > li > a {
   height: 50px;
   line-height: 50px;
   font-size: 14px;
 }
-/* line 53, _src/styles/header-fixed.scss */
+/* line 51, _src/styles/header-fixed.scss */
+.header-fixed .header-container .site-menu > li > .menu-tip {
+  margin-top: 60px;
+}
+/* line 58, _src/styles/header-fixed.scss */
 .header-fixed.show {
   top: 0;
 }
@@ -372,18 +410,19 @@ pre, code {
 .header-container .site-menu > li {
   display: inline-block;
   font-size: 16px;
+  margin-left: 80px;
+  position: relative;
 }
-/* line 81, _src/styles/header.scss */
+/* line 83, _src/styles/header.scss */
 .header-container .site-menu > li > a {
   color: white;
   display: block;
-  margin-left: 80px;
   height: 120px;
   line-height: 120px;
   position: relative;
   text-align: center;
 }
-/* line 90, _src/styles/header.scss */
+/* line 91, _src/styles/header.scss */
 .header-container .site-menu > li > a > span {
   position: relative;
   color: transparent;
@@ -393,7 +432,7 @@ pre, code {
   -o-transition: text-shadow 0.3s ease;
   transition: text-shadow 0.3s ease;
 }
-/* line 97, _src/styles/header.scss */
+/* line 98, _src/styles/header.scss */
 .header-container .site-menu > li > a:before {
   content: attr(data-content);
   font-family: FontAwesome;
@@ -411,24 +450,70 @@ pre, code {
   -o-transition: opacity 0.3s ease, text-shadow 0.3s ease;
   transition: opacity 0.3s ease, text-shadow 0.3s ease;
 }
-/* line 113, _src/styles/header.scss */
+/* line 114, _src/styles/header.scss */
 .header-container .site-menu > li > a:hover > span {
   text-shadow: 0 0 20px white;
 }
-/* line 117, _src/styles/header.scss */
+/* line 118, _src/styles/header.scss */
 .header-container .site-menu > li > a:hover:before {
   opacity: 1;
   text-shadow: 0 0 0 white;
 }
+/* line 125, _src/styles/header.scss */
+.header-container .site-menu > li > .menu-tip {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 50%;
+  margin-top: 90px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  border-radius: 3px;
+  z-index: 20;
+}
+/* line 139, _src/styles/header.scss */
+.header-container .site-menu > li > .menu-tip:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid rgba(0, 0, 0, 0.6);
+  top: -6px;
+  left: 50%;
+  margin-left: -6px;
+}
+/* line 155, _src/styles/header.scss */
+.header-container .site-menu > li:hover > .menu-tip {
+  display: block;
+  -webkit-animation: down-fade-in-2 0.5s ease-out backwards;
+}
 
 @-webkit-keyframes down-fade-in {
-  /* line 128, _src/styles/header.scss */
+  /* line 165, _src/styles/header.scss */
   0% {
     top: -30px;
     opacity: 0;
   }
 
-  /* line 132, _src/styles/header.scss */
+  /* line 169, _src/styles/header.scss */
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes down-fade-in-2 {
+  /* line 176, _src/styles/header.scss */
+  0% {
+    top: -10px;
+    opacity: 0;
+  }
+
+  /* line 180, _src/styles/header.scss */
   100% {
     top: 0;
     opacity: 1;
