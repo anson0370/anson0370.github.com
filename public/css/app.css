@@ -645,38 +645,31 @@ pre, code {
 /* line 13, _src/styles/post.scss */
 .post .post-title {
   display: block;
-  background-color: #48cfad;
-  -webkit-border-radius: 3px 3px 0 0;
-  -moz-border-radius: 3px 3px 0 0;
-  -ms-border-radius: 3px 3px 0 0;
-  -o-border-radius: 3px 3px 0 0;
-  border-radius: 3px 3px 0 0;
+  color: #48cfad;
+  border-bottom: 2px solid #48cfad;
   padding: 0 40px;
-  overflow: hidden;
+  -webkit-transition: border 0.3s ease;
+  -moz-transition: border 0.3s ease;
+  -o-transition: border 0.3s ease;
+  transition: border 0.3s ease;
 }
-/* line 20, _src/styles/post.scss */
+/* line 21, _src/styles/post.scss */
 .post .post-title > h2 {
   display: inline;
-  color: white;
   font-size: 30px;
   line-height: 2.5em;
   font-weight: bold;
-  -webkit-transition: text-shadow 0.3s ease;
-  -moz-transition: text-shadow 0.3s ease;
-  -o-transition: text-shadow 0.3s ease;
-  transition: text-shadow 0.3s ease;
 }
-/* line 30, _src/styles/post.scss */
+/* line 28, _src/styles/post.scss */
 .post .post-title > span {
   margin-left: 30px;
-  color: white;
   font-size: 16px;
 }
-/* line 38, _src/styles/post.scss */
-.post a.post-title:hover > h2 {
-  text-shadow: 0 0 5px;
+/* line 34, _src/styles/post.scss */
+.post a.post-title:hover {
+  border-width: 15px;
 }
-/* line 43, _src/styles/post.scss */
+/* line 38, _src/styles/post.scss */
 .post .post-content {
   background-color: white;
   -webkit-border-radius: 0 0 3px 3px;
@@ -687,11 +680,11 @@ pre, code {
   padding: 20px 40px;
 }
 
-/* line 52, _src/styles/post.scss */
+/* line 47, _src/styles/post.scss */
 .md.post-content code, .md.post-content pre {
   background-color: #e6e9ed;
 }
-/* line 56, _src/styles/post.scss */
+/* line 51, _src/styles/post.scss */
 .md.post-content pre {
   width: 100%;
   margin-left: -20px;

@@ -12,32 +12,27 @@ $post-code-back: $color-rule-2;
 .post {
   .post-title {
     display: block;
-    background-color: $color-rule-5;
-    @include border-radius(3px 3px 0 0);
+    color: $color-rule-4;
+    border-bottom: 2px solid $color-rule-5;
     padding: 0 $post-padding;
-    overflow: hidden;
+
+    @include transition(border 0.3s ease);
 
     > h2 {
       display: inline;
-      color: $light-font-color;
       font-size: 30px;
       line-height: 2.5em;
       font-weight: bold;
-
-      @include transition(text-shadow 0.3s ease);
     }
 
     > span {
       margin-left: 30px;
-      color: $light-font-color;
       font-size: 16px;
     }
   }
 
   a.post-title:hover {
-    > h2 {
-      @include text-shadow(0 0 5px);
-    }
+    border-width: 15px;
   }
 
   .post-content {
