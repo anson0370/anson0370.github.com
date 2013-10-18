@@ -4,7 +4,7 @@ $header-back-color: $color-rule-1;
 $header-height: 50px;
 
 .header-fixed {
-  background-color: $header-back-color;
+  background-color: white;
   width: 100%;
   position: fixed;
   opacity: 0.95;
@@ -14,6 +14,9 @@ $header-height: 50px;
   @include transition(top 0.3s ease);
 
   .header-container {
+    border: none;
+    @include box-shadow(none);
+
     .site-title {
       $title-height: $header-height;
       left: 10px;
@@ -29,10 +32,14 @@ $header-height: 50px;
         @include border-radius(50%);
         height: 10px;
         width: 10px;
-        border: 2px solid white;
+        border: 2px solid $font-color;
         top: ($header-height - 14px) / 2;
         left: 0;
       }
+    }
+
+    .site-rss {
+      font-size: 14px;
     }
 
     .site-owner {

@@ -12,27 +12,40 @@ $post-code-back: $color-rule-2;
 .post {
   .post-title {
     display: block;
-    color: $color-rule-4;
-    border-bottom: 2px solid $color-rule-5;
-    padding: 0 $post-padding;
-
-    @include transition(border 0.3s ease);
-
-    > h2 {
-      display: inline;
-      font-size: 30px;
-      line-height: 2.5em;
-      font-weight: bold;
-    }
+    background-color: $color-rule-5;
+    color: $light-font-color;
+    padding: 30px $post-padding;
+    @include border-radius(3px 3px 0 0);
 
     > span {
-      margin-left: 30px;
+      display: block;
       font-size: 16px;
+    }
+
+    > h2 {
+      display: block;
+      font-size: 30px;
+      font-weight: bold;
+      position: relative;
+
+      &:before {
+        content: attr(data-icon);
+        display: block;
+        position: absolute;
+        opacity: 0;
+        font-size: 16px;
+        font-weight: lighter;
+        top: 9px;
+        left: -20px;
+        font-family: FontAwesome;
+
+        @include transition(opacity 0.3s ease);
+      }
     }
   }
 
-  a.post-title:hover {
-    border-width: 15px;
+  a.post-title:hover h2:before {
+    opacity: 1;
   }
 
   .post-content {
