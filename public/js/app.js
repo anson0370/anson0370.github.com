@@ -59,7 +59,7 @@
   return this.require;
 }).call(this);this.require.define({"app":function(exports, require, module){(function() {
   $(function() {
-    var $header, $headerFixed, triggerHeight;
+    var $header, $headerFixed, initPjax, triggerHeight;
     $header = $(".header");
     $headerFixed = $(".header-fixed");
     triggerHeight = $header.height() - $headerFixed.height();
@@ -73,8 +73,13 @@
       }
     });
     $(window).scroll();
-    require("github").embedCommits($(".js-github-commits"));
     require("github").embedUser($(".js-github-user"));
+    initPjax = function() {
+      require("github").embedCommits($(".js-github-commits"));
+      require("disqus")();
+      return require("codepen")();
+    };
+    initPjax();
     $(document).pjax(".js-pjax", ".content-container", {
       fragment: ".content-container",
       timeout: 10000
@@ -89,11 +94,67 @@
         console.log("pjax:end");
         NProgress.done();
         $(".content-container").removeClass("fadeOut fadeIn").addClass("fadeIn");
-        return require("github").embedCommits($(".js-github-commits"));
+        return initPjax();
       }
     });
     return console.log("%cWelcome%chttp://anson.so/etc/jd", "line-height: 30px; border-radius: 5px 0 0 5px; background-color: #666; color: white; padding: 6px;", "border-radius: 0 5px 5px 0; border: 1px solid #666; color: #666; padding: 5px;");
   });
+
+}).call(this);
+;}});
+this.require.define({"codepen":function(exports, require, module){(function() {
+  var init, loaded;
+
+  loaded = false;
+
+  init = function() {
+    if ($(".codepen").length === 0) {
+      return;
+    }
+    if (window.CodePenEmbed) {
+      return CodePenEmbed.init();
+    } else {
+      if (!loaded) {
+        $.ajax({
+          type: "GET",
+          url: "http://codepen.io/assets/embed/ei.js",
+          dataType: "script",
+          cache: true
+        });
+        return loaded = true;
+      }
+    }
+  };
+
+  module.exports = init;
+
+}).call(this);
+;}});
+this.require.define({"disqus":function(exports, require, module){(function() {
+  var init, loaded;
+
+  loaded = false;
+
+  init = function() {
+    if ($("#disqus_thread").length === 0) {
+      return;
+    }
+    if (window.DISQUS) {
+      return DISQUS.next.host.loader.loadEmbed();
+    } else {
+      if (!loaded) {
+        $.ajax({
+          type: "GET",
+          url: "http://anson0370githubio.disqus.com/embed.js",
+          dataType: "script",
+          cache: true
+        });
+        return loaded = true;
+      }
+    }
+  };
+
+  module.exports = init;
 
 }).call(this);
 ;}});
