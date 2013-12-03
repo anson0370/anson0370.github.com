@@ -75,6 +75,23 @@
     $(window).scroll();
     require("github").embedCommits($(".js-github-commits"));
     require("github").embedUser($(".js-github-user"));
+    $(document).pjax(".js-pjax", ".content-container", {
+      fragment: ".content-container",
+      timeout: 10000
+    });
+    $(document).on({
+      "pjax:start": function() {
+        console.log("pjax:start");
+        NProgress.start();
+        return $(".content-container").removeClass("fadeOut fadeIn").addClass("fadeOut");
+      },
+      "pjax:end": function() {
+        console.log("pjax:end");
+        NProgress.done();
+        $(".content-container").removeClass("fadeOut fadeIn").addClass("fadeIn");
+        return require("github").embedCommits($(".js-github-commits"));
+      }
+    });
     return console.log("%cWelcome%chttp://anson.so/etc/jd", "line-height: 30px; border-radius: 5px 0 0 5px; background-color: #666; color: white; padding: 6px;", "border-radius: 0 5px 5px 0; border: 1px solid #666; color: #666; padding: 5px;");
   });
 

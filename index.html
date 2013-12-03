@@ -5,7 +5,7 @@ layout: default
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
-    <a href="{{ post.url }}" class="post-title">
+    <a href="{{ post.url }}" class="js-pjax post-title">
       <span>{{ post.date | date_to_string }}</span>
       <h2 data-icon="&#xf054;">{{ post.title }}</h2>
     </a>

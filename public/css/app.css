@@ -101,20 +101,43 @@ pre, code {
 .content-container {
   width: 1200px;
   margin: 50px auto 90px;
+  position: relative;
 }
-/* line 12, _src/styles/content.scss */
+/* line 13, _src/styles/content.scss */
 .content-container .disqus-wrap {
   margin-top: 80px;
 }
+/* line 17, _src/styles/content.scss */
+.content-container.fadeOut {
+  -webkit-animation: up-fade-out 0.5s ease-out forwards;
+}
+/* line 21, _src/styles/content.scss */
+.content-container.fadeIn {
+  -webkit-animation: up-fade-in 0.5s ease-out backwards;
+}
+
+@-webkit-keyframes up-fade-out {
+  /* line 27, _src/styles/content.scss */
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+
+  /* line 31, _src/styles/content.scss */
+  100% {
+    top: -30px;
+    opacity: 0;
+  }
+}
 
 @-webkit-keyframes up-fade-in {
-  /* line 18, _src/styles/content.scss */
+  /* line 38, _src/styles/content.scss */
   0% {
     top: 30px;
     opacity: 0;
   }
 
-  /* line 22, _src/styles/content.scss */
+  /* line 42, _src/styles/content.scss */
   100% {
     top: 0;
     opacity: 1;
