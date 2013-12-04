@@ -4,17 +4,11 @@ layout: default
 
 <div class="posts">
   {% for post in paginator.posts %}
-  <div class="post">
+  <div class="post only-title">
     <a href="{{ post.url }}" class="js-pjax post-title">
       <span>{{ post.date | date_to_string }}</span>
       <h2 data-icon="&#xf054;">{{ post.title }}</h2>
     </a>
-    <div class="post-content md">
-      {{ post.content | split:'<!--break-->' | first }}
-      {% if post.content contains '<!--break-->' %}
-        <p><a href="{{ post.url }}">Read More...</a></p>
-      {% endif %}
-    </div>
   </div>
   {% endfor %}
 </div>

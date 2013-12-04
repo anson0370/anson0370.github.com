@@ -27,31 +27,28 @@ $post-code-back: $color-rule-2;
       font-size: 30px;
       font-weight: bold;
       position: relative;
-
-      &:before {
-        content: attr(data-icon);
-        display: block;
-        position: absolute;
-        opacity: 0;
-        font-size: 16px;
-        font-weight: lighter;
-        top: 9px;
-        left: -20px;
-        font-family: FontAwesome;
-
-        @include transition(opacity 0.3s ease);
-      }
     }
-  }
-
-  a.post-title:hover h2:before {
-    opacity: 1;
   }
 
   .post-content {
     background-color: white;
     @include border-radius(0 0 3px 3px);
     padding: 20px $post-padding;
+  }
+
+  &.only-title {
+    .post-title {
+      background: none;
+      color: $font-color;
+      @include border-radius(3px);
+
+      &:hover {
+        background-color: $color-rule-5;
+        color: $light-font-color;
+
+        @include transition(all 0.3s ease);
+      }
+    }
   }
 }
 

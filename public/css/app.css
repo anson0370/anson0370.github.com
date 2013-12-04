@@ -702,27 +702,7 @@ pre, code {
   font-weight: bold;
   position: relative;
 }
-/* line 31, _src/styles/post.scss */
-.post .post-title > h2:before {
-  content: attr(data-icon);
-  display: block;
-  position: absolute;
-  opacity: 0;
-  font-size: 16px;
-  font-weight: lighter;
-  top: 9px;
-  left: -20px;
-  font-family: FontAwesome;
-  -webkit-transition: opacity 0.3s ease;
-  -moz-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
-}
-/* line 47, _src/styles/post.scss */
-.post a.post-title:hover h2:before {
-  opacity: 1;
-}
-/* line 51, _src/styles/post.scss */
+/* line 33, _src/styles/post.scss */
 .post .post-content {
   background-color: white;
   -webkit-border-radius: 0 0 3px 3px;
@@ -732,12 +712,31 @@ pre, code {
   border-radius: 0 0 3px 3px;
   padding: 20px 40px;
 }
+/* line 40, _src/styles/post.scss */
+.post.only-title .post-title {
+  background: none;
+  color: #444444;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 45, _src/styles/post.scss */
+.post.only-title .post-title:hover {
+  background-color: #48cfad;
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
 
-/* line 60, _src/styles/post.scss */
+/* line 57, _src/styles/post.scss */
 .md.post-content code, .md.post-content pre {
   background-color: #f6f6f6;
 }
-/* line 64, _src/styles/post.scss */
+/* line 61, _src/styles/post.scss */
 .md.post-content pre {
   width: 100%;
   margin-left: -20px;
